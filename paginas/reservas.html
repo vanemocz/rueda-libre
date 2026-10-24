@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,12 @@
     <header>
         <h1><strong>RUEDA LIBRE</strong></h1>
         <nav>
-            <Menu> <strong>Menu</strong>
+            <menu> <strong>Menu</strong>
                 <li><a href="../index.html"> Inicio</a></li>
                 <li><a href="tarifas.html"> Tarifas</a></li>
                 <li><a href="tarifas.html#tabla-recorridos"> Rutas</a></li>
                 <li><a href="reservas.html"> Reservas</a></li>
-            </Menu>
+            </menu>
         </nav>
     </header>
 
@@ -33,7 +33,7 @@
                 <fieldset>
                     <legend>Tus datos</legend>
                     <label for="nombre">Nombre completo</label> <br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required> <br><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" minlength="3" required><br><br>
 
                     <label for="tipo-documento">Tipo de documento</label> <br>
                     <select name="tipo-documento" id="tipo-documento" required>
@@ -58,7 +58,7 @@
 
                     <legend>Tu alquiler</legend>
                     <label for="fecha">Fecha del alquiler</label> <br>
-                    <input type="date" id="fecha" name="fecha" required> <br><br>
+                    <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required> <br><br>
 
                     <label for="tipo-bicicleta">Tipo de bicicleta</label> <br><br>
 
@@ -83,7 +83,7 @@
                     <label for="dia-completo">Día completo</label> <br> <br>
 
                     <label for="cantidad">Cantidad de bicicletas</label> <br>
-                    <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad de bicicletas" required> <br><br>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="6" required> <br><br>
 
                     <label for="recorrido">Recorrido guiado</label> <br>
                     <select name="recorrido" id="recorrido">
@@ -99,7 +99,7 @@
                 <fieldset>
                     <legend>Confirmación</legend>
                     <label for="comentarios">Comentarios</label> <br>
-                    <textarea name="comentarios" id="comentarios" placeholder="agrega información adicional que consideres necesaria"></textarea> <br><br>
+                    <textarea name="comentarios" id="comentarios" placeholder="agrega información adicional que consideres necesaria" maxlength="300"></textarea><br><br>
 
                     <input type="checkbox" id="politicas" name="politicas" required>
                     <label for="politicas">Aceptacion de las politicas de alquiler</label> <br><br>

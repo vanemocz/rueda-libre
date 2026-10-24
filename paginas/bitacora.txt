@@ -22,3 +22,163 @@ Rutas:
 file:///home/cohorte8/modulo-HTML-CSS/semana-1/rueda-libre/index.html esta ruta me lleva a la pagina inicial del proyecto
 file:///home/cohorte8/modulo-HTML-CSS/semana-1/rueda-libre/paginas/tarifas.html esta ruta me lleva a la pagina de tarifas
 file:///home/cohorte8/modulo-HTML-CSS/semana-1/rueda-libre/paginas/reservas.html esta ruta me lleva a la pagina de reservas
+
+# Esquema de regiones de cada pagina:
+
+    1. index.html 
+
+    <body>
+    │
+    ├── <header>
+    │   ├── <h1> RUEDA LIBRE
+    │   └── <nav>
+    │       └── <menu>
+    │           ├── Inicio
+    │           ├── Tarifas
+    │           ├── Rutas
+    │           └── Reservas
+    │
+    ├── <main id="contenido">
+    │   │
+    │   ├── <section id="banner">
+    │   │   ├── Mensaje de bienvenida
+    │   │   ├── Enlace a Encuéntranos
+    │   │   ├── Imagen de portada
+    │   │   └── Descripción del negocio
+    │   │
+    │   ├── <section id="nuestros-servicios">
+    │   │   ├── <article id="alquiler">
+    │   │   ├── <article id="compra">
+    │   │   ├── <article id="taller">
+    │   │   └── <article> Recorridos guiados
+    │   │
+    │   ├── <figure>
+    │   │   └── Imagen de bicicleta
+    │   │
+    │   ├── <section id="preguntas">
+    │   │   ├── Instructivo de alquiler (<ol>)
+    │   │   ├── Enlace a Reservas
+    │   │   ├── Beneficios (<ul>)
+    │   │   ├── ¿Quiénes somos?
+    │   │   └── Contacto por correo
+    │   │
+    │   ├── <section id="Encuentranos">
+    │   │   ├── Enlace a Google Maps
+    │   │   └── Descripción de la ubicación
+    │   │
+    │   └── <figure>
+    │       └── Imagen de cierre
+    │
+    └── <footer>
+        ├── Derechos de autor
+        ├── Correo electrónico
+        └── Año 2026
+
+    • Propósito: Es la zona de identidad del sitio.
+    • Componentes: Contiene el título principal de la marca (<h1>) y la barra de navegación (<nav>) con los enlaces principales a las diferentes secciones y páginas internas.
+
+    2. tarifas.html
+
+    <body>
+    │
+    ├── <header>
+    │   ├── <h1> RUEDA LIBRE
+    │   └── <nav>
+    │       └── <menu>
+    │           ├── Inicio
+    │           ├── Tarifas
+    │           ├── Rutas
+    │           └── Reservas
+    │
+    ├── <main id="contenido">
+    │   │
+    │   ├── <section id="tarifas">
+    │   │   └── <table id="tabla-tarifas">
+    │   │
+    │   ├── <figure>
+    │   │   └── <img>
+    │   │
+    │   ├── <section id="recorridos">
+    │   │   └── <table id="tabla-recorridos">
+    │   │
+    │   └── <section id="indicaciones">
+    │       ├── Enlace a Reservas
+    │       ├── Información adicional
+    │       └── Enlace a Inicio
+    │
+    ├── <aside>
+    │   ├── <h2> Qué llevar
+    │   └── <ul>
+    │       └── Lista de elementos recomendados
+    │
+    └── <footer>
+        ├── Derechos de autor
+        ├── Correo electrónico
+        └── Año 2026
+
+    3. reservas.html
+
+    <body>
+    │
+    ├── <header>
+    │   ├── <h1> RUEDA LIBRE
+    │   └── <nav>
+    │       └── <menu>
+    │           ├── Inicio
+    │           ├── Tarifas
+    │           ├── Rutas
+    │           └── Reservas
+    │
+    ├── <main id="contenido">
+    │   │
+    │   ├── <section id="reserva-bici">
+    │   │   └── Enlace "Reserva tu bicicleta"
+    │   │       └── mailto:
+    │   │
+    │   └── <section id="formulario-reserva">
+    │       └── <form>
+    │           │
+    │           ├── <fieldset>
+    │           │   └── <legend> Tus datos
+    │           │       ├── Nombre completo
+    │           │       ├── Tipo de documento
+    │           │       ├── Número de documento
+    │           │       ├── Correo electrónico
+    │           │       └── Celular
+    │           │
+    │           ├── <fieldset>
+    │           │   └── <legend> Tu alquiler
+    │           │       ├── Fecha del alquiler
+    │           │       ├── Tipo de bicicleta
+    │           │       ├── Plan de alquiler
+    │           │       ├── Cantidad de bicicletas
+    │           │       └── Recorrido guiado
+    │           │
+    │           └── <fieldset>
+    │               └── <legend> Confirmación
+    │                   ├── Comentarios
+    │                   ├── Aceptación de políticas
+    │                   └── Botón Confirmar reserva
+    │
+    ├── <aside>
+    │   └── <dl> Horarios de atención
+    │       ├── <dt> Días de atención
+    │       └── <dd> Horarios correspondientes
+    │
+    └── <footer>
+        ├── Derechos de autor
+        ├── Correo electrónico
+        └── Año 2026
+
+# Elecciones tipo de datos del formulario Rueda libre
+
+    * Tipo email para el correo electrónico:
+        Se eligió el tipo de dato email porque permite validar que el correo ingresado tenga una estructura básica válida. Esto ayuda a reducir errores al momento de registrar la información de contacto del cliente y facilita el uso de las validaciones nativas de HTML.
+    * Tipo date para la fecha del alquiler
+        Se eligió el tipo de dato date porque permite al usuario seleccionar una fecha mediante un calendario, facilitando su ingreso y disminuyendo errores de digitación. Además, los atributos min y max permiten establecer el rango de fechas autorizado para realizar las reservas, según las reglas del negocio.
+    * Tipo number para la cantidad de bicicletas
+        Se eligió el tipo de dato number porque la cantidad de bicicletas debe representarse mediante un valor numérico. Este tipo permite establecer límites mínimos y máximos mediante los atributos min y max, garantizando que la cantidad solicitada esté entre 1 y 6 bicicletas.
+
+# Tabla de pruebas del formulario
+
+La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta img del proyecto
