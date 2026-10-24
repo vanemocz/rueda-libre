@@ -24,7 +24,7 @@
     <main id="contenido">
 
         <section id="reserva-bici">
-            <h2><a href="mailito:hola@ruedalibre.example"> Reserva tu bicicleta </a></h2>
+            <h2><a href="mailto:hola@ruedalibre.example"> Reserva tu bicicleta </a></h2>
         </section>
 
         <section id="formulario-reserva">
@@ -33,7 +33,7 @@
                 <fieldset>
                     <legend>Tus datos</legend>
                     <label for="nombre">Nombre completo</label> <br>
-                    <input type="text" id="nombre" name="nombre" required> <br><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required> <br><br>
 
                     <label for="tipo-documento">Tipo de documento</label> <br>
                     <select name="tipo-documento" id="tipo-documento" required>
@@ -45,33 +45,54 @@
                     </select> <br><br>
 
                     <label for="documento">Número de documento</label> <br>
-                    <input type="text" id="documento" name="documento" pattern="\d{6,10}" inputmode="numeric" title="sin puntos ni espacios" required> <br><br>
+                    <input type="text" id="documento" name="documento" pattern="\d{6,10}" inputmode="numeric" title="Minimo 6 - maximo 10 digitos" placeholder="sin puntos ni espacios" required><br><br>
 
                     <label for="correo">Correo electronico</label> <br>
-                    <input type="email" id="correo" name="correo" required> <br><br>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo electronico" required> <br><br>
 
                     <label for="celular">Celular</label> <br>
-                    <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="Valida el numero ingresado, debe tener 10 digitos" required> <br><br>
+                    <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="Valida el numero ingresado, debe tener 10 digitos" placeholder="Tu numero de celular" required> <br><br>
                 </fieldset>
 
                 <fieldset>
-                    //esta seccion falta por completar toda
+
                     <legend>Tu alquiler</legend>
                     <label for="fecha">Fecha del alquiler</label> <br>
                     <input type="date" id="fecha" name="fecha" required> <br><br>
 
-                    <label for="tipo-bicicleta">Tipo de bicicleta</label> <br>
-                    <input type="" id="tipo-bicicleta" name="tipo-bicicleta" required> <br><br>
+                    <label for="tipo-bicicleta">Tipo de bicicleta</label> <br><br>
 
-                    <label for="plan">Plan</label> <br>
-                    <input type="" id="plan" name="plan" required> <br><br>
-                    
+                    <input type="radio" name="tipo-bicicleta" id="urbana" required>
+                    <label for="urbana">Bicicleta urbana</label> 
+
+                    <input type="radio" name="tipo-bicicleta" id="montaña" required>
+                    <label for="montaña">Bicicleta de montaña</label>
+
+                    <input type="radio" name="tipo-bicicleta" id="electrica" required>
+                    <label for="electrica">Bicicleta eléctrica</label> <br> <br>
+
+                    <label for="Plan">Plan</label> <br><br>
+
+                    <input type="radio" name="plan" id="una-hora" required>
+                    <label for="una-hora">Una hora</label> 
+
+                    <input type="radio" name="plan" id="medio-dia" required>
+                    <label for="medio-dia">Medio día</label>
+
+                    <input type="radio" name="plan" id="dia-completo" required>
+                    <label for="dia-completo">Día completo</label> <br> <br>
+
                     <label for="cantidad">Cantidad de bicicletas</label> <br>
-                    <input type="number" id="cantidad" name="cantidad" required> <br><br>
+                    <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad de bicicletas" required> <br><br>
 
                     <label for="recorrido">Recorrido guiado</label> <br>
-                    <select name="recorrido" id="recorrido"></select>
-                    <input type="" id="recorrido" name="recorrido" required> <br><br>
+                    <select name="recorrido" id="recorrido">
+                        <option value="">Selecciona un recorrido</option>
+                        <option value="ruta-1">Rios y parques</option>
+                        <option value="ruta-2">Sabores de barrio</option>
+                        <option value="ruta-3">Reto las palmas</option> <br><br>
+
+                    </select>
 
                 </fieldset>
 
@@ -81,7 +102,10 @@
                     <textarea name="comentarios" id="comentarios" placeholder="agrega información adicional que consideres necesaria"></textarea> <br><br>
 
                     <input type="checkbox" id="politicas" name="politicas" required>
-                    <label for="politicas">Aceptacion de las politicas de alquiler</label> <br>
+                    <label for="politicas">Aceptacion de las politicas de alquiler</label> <br><br>
+
+                    <button type="submit">Confirmar reserva</button>
+
                 </fieldset>
 
             </form>
