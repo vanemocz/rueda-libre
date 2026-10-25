@@ -1,3 +1,5 @@
+https://vanemocz.github.io/rueda-libre/
+
 Reto 1
 
  URL completa: http://127.0.0.1:5500/semana-1/rueda-libre/index.html
@@ -182,3 +184,28 @@ file:///home/cohorte8/modulo-HTML-CSS/semana-1/rueda-libre/paginas/reservas.html
 # Tabla de pruebas del formulario
 
 La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta img del proyecto
+
+# Mapa de uso de color
+
+    Blanco sobre Verde Ruta : apta para todo, excepto WCAG AAA en texto normal.
+    Blanco sobre Naranja Pedal : no apta.
+    Azul Noche sobre Naranja Pedal : apta para todo.
+    Azul Noche sobre Crema : apta para todo.
+    Gris Asfalto sobre Crema : apta para todo.
+    Verde Ruta sobre Crema : apta para todo, excepto WCAG AAA en texto normal.
+    Naranja Pedal sobre Crema : no apta.
+    Blanco sobre Azul Noche : apta para todo.
+
+    mapa de colores a usar: 
+        Crema, #FAF6EF , Fondo general.
+        Gris Asfalto, #5B6470, Texto secundario.
+        Azul Noche, #14213D, Títulos y encabezado.
+        Verde Ruta, #1E7A4F, Botones y enlaces.
+        Naranja Pedal, #F39A2B, Destacados y botones secundarios.
+
+    En resumen, la propuesta que hizo el cliente si es apta. Teniendo en cuenta de no usar Naranja pedal como color principal.
+
+# Enlace de la page
+
+    https://vanemocz.github.io/rueda-libre/
+
