@@ -1,0 +1,32 @@
+:root {
+    --color-fondo: #FAF6EF;
+    --color-titulos: #14213D;
+    --color-texto-principal: #14213D;
+    --color-texto-secundario: #5B6470;
+    --color-boton-principal: #1E7A4F;
+    --color-enlaces: #1E7A4F;
+    --color-boton-secundario: #F39A2B;
+
+    --fuente-titulos: "Montserrat", sans-serif;
+    --fuente-textos: "Open Sans", sans-serif;
+
+    --espaciado-pequeno: 0.5rem;
+    --espaciado-mediano: 1rem;
+    --espaciado-grande: 2rem;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    color: var(--color-texto-principal);
+    background-color: var(--color-fondo);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
