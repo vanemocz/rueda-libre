@@ -209,3 +209,22 @@ La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta i
 
     https://vanemocz.github.io/rueda-libre/
 
+# Prueba de herencia
+
+    Prueba 1. Propiedad heredada: `font-family`
+
+    Se inspeccionó un elemento de la página mediante DevTools y se comprobó que recibe la propiedad `font-family` declarada en `body`. La fuente general se establece mediante la variable `--fuente-textos`, cuyo valor es Open Sans.
+
+        **Resultado:** se comprueba la herencia de la tipografía desde el elemento `body`.
+
+    Prueba 2. Propiedad no heredada: `background-color`
+
+    Se identificó que `background-color` está declarado en `body` mediante la variable `--color-fondo`. Esta propiedad no se hereda automáticamente a los elementos descendientes.
+
+        **Resultado:** el fondo Crema se aplica a `body`, pero los elementos internos no reciben automáticamente esa propiedad por herencia.
+
+# Prueba Fuente específica para los encabezados**
+
+    Se inspeccionó el elemento `<h2>` mediante DevTools y, en la pestaña Computed, se comprobó que utiliza la fuente Montserrat con un grosor de 700. Esta configuración proviene del selector agrupado de encabezados definido en la hoja de estilos externa.
+
+        **Resultado:** se verifica que los encabezados utilizan la tipografía establecida en la identidad visual de Rueda Libre, mientras que los párrafos utilizan Open Sans, definida en `body`.
