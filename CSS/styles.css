@@ -30,3 +30,48 @@ h6 {
     font-family: var(--fuente-titulos);
     font-weight: 700;
 }
+
+#menu a{ 
+    color: var(--color-texto-secundario);
+}
+
+#menu a.activo {
+    color: var(--color-boton-principal);
+    font-weight: 600; 
+}
+
+#menu a:hover {
+    color: var(--color-boton-principal);
+}
+
+#menu a:focus {
+    color: var(--color-boton-principal);
+    outline: 2px solid var(--color-titulos);
+    outline-offset: 3px;
+}
+
+.boton-reserva {
+    display: inline-block;
+    background-color: var(--color-boton-principal);
+    color: var(--color-fondo);
+    padding: var(--espaciado-pequeno) var(--espaciado-mediano);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.boton-reserva:hover {
+    background-color: var(--color-titulos);
+}
+
+.boton-reserva:focus {
+    outline: 2px solid var(--color-titulos);
+    outline-offset: 3px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--color-titulos);
+    outline-offset: 3px;
+}

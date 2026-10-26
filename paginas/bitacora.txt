@@ -223,8 +223,16 @@ La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta i
 
         **Resultado:** el fondo Crema se aplica a `body`, pero los elementos internos no reciben automáticamente esa propiedad por herencia.
 
-# Prueba Fuente específica para los encabezados**
+# Prueba Fuente específica para los encabezados
 
     Se inspeccionó el elemento `<h2>` mediante DevTools y, en la pestaña Computed, se comprobó que utiliza la fuente Montserrat con un grosor de 700. Esta configuración proviene del selector agrupado de encabezados definido en la hoja de estilos externa.
 
         **Resultado:** se verifica que los encabezados utilizan la tipografía establecida en la identidad visual de Rueda Libre, mientras que los párrafos utilizan Open Sans, definida en `body`.
+
+# Prueba de especificidad CSS
+
+    Se observó que la declaración `color` del selector `.activo` aparece tachada, mientras que la declaración `color` del selector `#menu a` permanece activa.
+
+    El selector `#menu a` tiene una especificidad de `(1, 0, 1)`, mientras que `.activo` tiene una especificidad de `(0, 1, 0)`. Por esta razón, el navegador aplica el color de `#menu a`.
+
+    La propiedad `font-weight: 600` de `.activo` sí se aplica porque no existe un conflicto para esa propiedad entre estas dos reglas.
