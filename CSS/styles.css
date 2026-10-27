@@ -1,3 +1,5 @@
+/*Variables*/
+
 :root {
     --color-fondo: #FAF6EF;
     --color-titulos: #14213D;
@@ -19,6 +21,8 @@
     box-sizing: border-box;
 }
 
+/*Base*/
+
 body {
     font-family: var(--fuente-textos);
     color: var(--color-texto-principal);
@@ -34,6 +38,8 @@ h6 {
     font-family: var(--fuente-titulos);
     font-weight: 700;
 }
+
+/*Navegacion*/
 
 #menu a{ 
     color: var(--color-texto-secundario);
@@ -104,6 +110,8 @@ main {
     min-height: 70vh;
 }
 
+/*NUestros servicios*/
+
 #nuestros-servicios article {
     padding: 1.5rem;
     border: 1px solid var(--color-texto-secundario);
@@ -114,6 +122,8 @@ main {
 #nuestros-servicios article img {
     width: 100%;
 }
+
+/*Tablas*/
 
 table {
     width: 100%;
@@ -130,6 +140,8 @@ th {
     background-color: var(--color-titulos);
     color: var(--color-fondo);
 }
+
+/*Formulario*/
 
 #formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
 #formulario-reserva select,
@@ -168,6 +180,8 @@ th {
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
+
+/*Tarjetas*/
 
 .tarjetas-bicicletas {
     display: flex;
