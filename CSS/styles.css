@@ -15,6 +15,10 @@
     --espaciado-grande: 2rem;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--fuente-textos);
     color: var(--color-texto-principal);
@@ -74,4 +78,64 @@ textarea:focus,
 select:focus {
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
+}
+
+main {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+#banner {
+    min-height: 70vh;
+}
+
+#nuestros-servicios article {
+    padding: 1.5rem;
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#nuestros-servicios article img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid var(--color-texto-secundario);
+}
+
+th {
+    background-color: var(--color-titulos);
+    color: var(--color-fondo);
+}
+
+#formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
+#formulario-reserva select,
+#formulario-reserva textarea {
+    width: 100%;
+}
+
+#formulario-reserva fieldset {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#formulario-reserva button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-boton-principal);
+    color: var(--color-fondo);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#menu li {
+    display: inline-block;
 }

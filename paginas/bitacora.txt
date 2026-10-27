@@ -236,3 +236,13 @@ La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta i
     El selector `#menu a` tiene una especificidad de `(1, 0, 1)`, mientras que `.activo` tiene una especificidad de `(0, 1, 0)`. Por esta razón, el navegador aplica el color de `#menu a`.
 
     La propiedad `font-weight: 600` de `.activo` sí se aplica porque no existe un conflicto para esa propiedad entre estas dos reglas.
+
+# Se modifica temporalmente box-sizing
+
+    | Propiedad | Valor inicial | Valor modificado
+    | `box-sizing` | `border-box` | `content-box`
+    | `width` | `1120px` | 1070 px
+    | `padding` | `24px` por lado |
+    | Borde | `1px` por lado |
+
+    La diferencia corresponde al relleno y los bordes: 24 px de relleno a cada lado y 1 px de borde a cada lado. Esto permite comprobar cómo box-sizing modifica el cálculo de las dimensiones del elemento.
