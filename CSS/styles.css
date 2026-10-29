@@ -41,6 +41,29 @@ h6 {
 
 /*Navegacion*/
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaciado-pequeno);
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    
+}
+
 #menu a{ 
     color: var(--color-texto-secundario);
 }
@@ -171,16 +194,6 @@ th {
     background-color: var(--color-titulos);
 }
 
-#menu li {
-    display: inline-block;
-}
-
-#menu li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-
 /*Tarjetas*/
 
 .tarjetas-bicicletas {
@@ -233,4 +246,14 @@ th {
 .boton-whatsapp:focus {
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--color-texto-secundario);
+    color: var(--color-fondo);
+    gap: var(--espaciado-grande);
+    justify-content: center;
+    border-radius: 15px;
+    flex-direction: row;
 }
