@@ -246,3 +246,7 @@ La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta i
     | Borde | `1px` por lado |
 
     La diferencia corresponde al relleno y los bordes: 24 px de relleno a cada lado y 1 px de borde a cada lado. Esto permite comprobar cómo box-sizing modifica el cálculo de las dimensiones del elemento.
+
+# Se aplica flexbox a CSS
+    Al aplicar display flex al encabezado y el pie, el texto se adecua a las pantallas pequeñas
+

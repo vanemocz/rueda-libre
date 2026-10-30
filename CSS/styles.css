@@ -133,7 +133,7 @@ main {
     min-height: 70vh;
 }
 
-/*NUestros servicios*/
+/*Nuestros servicios*/
 
 #nuestros-servicios article {
     padding: 1.5rem;
@@ -196,6 +196,10 @@ th {
 
 /*Tarjetas*/
 
+#nuestra-flota{
+    display: grid;
+}
+
 .tarjetas-bicicletas {
     display: flex;
     gap: var(--espaciado-mediano);
@@ -255,5 +259,4 @@ footer{
     gap: var(--espaciado-grande);
     justify-content: center;
     border-radius: 15px;
-    flex-direction: row;
 }
