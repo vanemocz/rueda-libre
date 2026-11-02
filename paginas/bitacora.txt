@@ -274,3 +274,32 @@ SEMANA 2
     Por otra parte, se utilizó Flexbox dentro de cada tarjeta porque los elementos tienen una distribución principalmente vertical. La propiedad `margin-top: auto` permite que los enlaces de reserva permanezcan al final de las tarjetas, incluso cuando las descripciones tienen diferentes longitudes.
 
     La combinación de ambas tecnologías permite mantener una presentación organizada, uniforme y adaptable.
+
+# CSS Grid o Flexbox
+
+    1. Portada - CSS Grid
+
+    Se utilizó Grid para organizar la sección principal de la portada en dos columnas: una para el contenido textual y otra para la imagen. Se eligió esta herramienta porque permite controlar la distribución en dos dimensiones y establecer proporciones mediante unidades fr.
+    Grid
+
+    2. Galería de rutas – CSS Grid
+
+    Se utilizó Grid para distribuir las tres tarjetas de recorridos en una fila, manteniendo una separación uniforme entre ellas. Esta herramienta facilita la organización de varias tarjetas en filas y columnas, permitiendo adaptar su distribución según el espacio disponible.
+    Grid
+
+    3. Página de reservas – CSS Grid
+
+    Se utilizó Grid para distribuir el formulario y la información de contacto en una proporción 2:1. El formulario ocupa dos fracciones del espacio disponible y la información de contacto una fracción. Se eligió Grid porque permite establecer una distribución precisa entre dos áreas independientes.
+    Grid
+
+    4. Fila de campos del formulario – Flexbox
+
+    Se utilizó Flexbox para ubicar los campos de tipo de documento y número de documento en una misma fila. Se eligió esta herramienta porque permite organizar elementos en una sola dimensión, distribuir el espacio disponible y controlar la separación entre ellos. 
+
+    5. Encabezado – Flexbox
+
+    Se utilizó Flexbox para distribuir horizontalmente el nombre de la marca y el menú de navegación. 
+
+    6. Pie de página – Flexbox
+
+    Se utilizó Flexbox para organizar horizontalmente los elementos del pie de página: derechos de autor, correo electrónico y año. 

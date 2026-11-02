@@ -130,7 +130,18 @@ main {
 }
 
 #banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--espaciado-grande);
     min-height: 70vh;
+}
+
+.banner-imagen img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*Nuestros servicios*/
@@ -197,7 +208,7 @@ th {
 /*Tarjetas*/
 
 #nuestra-flota{
-    padding: var(--espaciado-grande)0;
+    padding: var(--espaciado-grande) 0;
 }
 
 .tarjetas-bicicletas {
@@ -239,6 +250,28 @@ th {
     font-weight: 700;
 }
 
+/* Galería de rutas */
+
+.galeria-rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espaciado-mediano);
+}
+
+.tarjeta-ruta {
+    padding: var(--espaciado-mediano);
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 0.5rem;
+}
+
+.tarjeta-ruta img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
 .boton-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -261,11 +294,31 @@ th {
     outline-offset: 3px;
 }
 
-footer{
+footer {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espaciado-grande);
+    padding: var(--espaciado-pequeno);
     background-color: var(--color-texto-secundario);
     color: var(--color-fondo);
-    gap: var(--espaciado-grande);
-    justify-content: center;
     border-radius: 15px;
+    text-align: center;
+}
+
+.layout-reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espaciado-grande);
+    align-items: start;
+}
+
+.datos-documento {
+    display: flex;
+    gap: var(--espaciado-mediano);
+}
+
+.datos-documento div {
+    flex: 1;
 }

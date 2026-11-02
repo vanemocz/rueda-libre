@@ -31,102 +31,108 @@
             <h2><a href="mailto:hola@ruedalibre.example"> Reserva tu bicicleta </a></h2>
         </section>
 
-        <section id="formulario-reserva">
-            <form action="" method="post">
+        <div class="layout-reservas">
+            <section id="formulario-reserva">
+                <form action="" method="post">
 
-                <fieldset>
-                    <legend><h3>Tus datos</h3></legend>
-                    <label for="nombre">Nombre completo</label> <br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" minlength="3" required><br><br>
+                    <fieldset>
+                        <legend><h3>Tus datos</h3></legend>
+                        <label for="nombre">Nombre completo</label> <br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" minlength="3" required><br><br>
 
-                    <label for="tipo-documento">Tipo de documento</label> <br>
-                    <select name="tipo-documento" id="tipo-documento" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="CC">Cedula de ciudadania</option>
-                        <option value="CE">Cedula de extranjeria</option>
-                        <option value="TI">Tarjeta de identidad</option>
-                        <option value="PAS">Pasaporte</option>
-                    </select> <br><br>
+                        <div class="datos-documento">
+                            <div>
+                                <label for="tipo-documento">Tipo de documento</label> <br>
+                                <select name="tipo-documento" id="tipo-documento" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="CC">Cedula de ciudadania</option>
+                                    <option value="CE">Cedula de extranjeria</option>
+                                    <option value="TI">Tarjeta de identidad</option>
+                                    <option value="PAS">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="documento">Número de documento</label> <br>
+                                <input type="text" id="documento" name="documento" pattern="\d{6,10}" inputmode="numeric" title="Minimo 6 - maximo 10 digitos" placeholder="sin puntos ni espacios" required>
+                            </div>
+                        </div><br>
 
-                    <label for="documento">Número de documento</label> <br>
-                    <input type="text" id="documento" name="documento" pattern="\d{6,10}" inputmode="numeric" title="Minimo 6 - maximo 10 digitos" placeholder="sin puntos ni espacios" required><br><br>
+                        <label for="correo">Correo electronico</label> <br>
+                        <input type="email" id="correo" name="correo" placeholder="Tu correo electronico" required> <br><br>
 
-                    <label for="correo">Correo electronico</label> <br>
-                    <input type="email" id="correo" name="correo" placeholder="Tu correo electronico" required> <br><br>
+                        <label for="celular">Celular</label> <br>
+                        <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="Valida el numero ingresado, debe tener 10 digitos" placeholder="Tu numero de celular" required> <br><br>
+                    </fieldset>
 
-                    <label for="celular">Celular</label> <br>
-                    <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="Valida el numero ingresado, debe tener 10 digitos" placeholder="Tu numero de celular" required> <br><br>
-                </fieldset>
+                    <fieldset>
 
-                <fieldset>
+                        <legend><h3>Tu alquiler</h3></legend>
+                        <label for="fecha">Fecha del alquiler</label> <br>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required> <br><br>
 
-                    <legend><h3>Tu alquiler</h3></legend>
-                    <label for="fecha">Fecha del alquiler</label> <br>
-                    <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required> <br><br>
+                        <label for="tipo-bicicleta">Tipo de bicicleta</label> <br><br>
 
-                    <label for="tipo-bicicleta">Tipo de bicicleta</label> <br><br>
+                        <input type="radio" name="tipo-bicicleta" id="urbana" required>
+                        <label for="urbana">Bicicleta urbana</label> 
 
-                    <input type="radio" name="tipo-bicicleta" id="urbana" required>
-                    <label for="urbana">Bicicleta urbana</label> 
+                        <input type="radio" name="tipo-bicicleta" id="montaña" required>
+                        <label for="montaña">Bicicleta de montaña</label>
 
-                    <input type="radio" name="tipo-bicicleta" id="montaña" required>
-                    <label for="montaña">Bicicleta de montaña</label>
+                        <input type="radio" name="tipo-bicicleta" id="electrica" required>
+                        <label for="electrica">Bicicleta eléctrica</label> <br> <br>
 
-                    <input type="radio" name="tipo-bicicleta" id="electrica" required>
-                    <label for="electrica">Bicicleta eléctrica</label> <br> <br>
+                        <label for="Plan">Plan</label> <br><br>
 
-                    <label for="Plan">Plan</label> <br><br>
+                        <input type="radio" name="plan" id="una-hora" required>
+                        <label for="una-hora">Una hora</label> 
 
-                    <input type="radio" name="plan" id="una-hora" required>
-                    <label for="una-hora">Una hora</label> 
+                        <input type="radio" name="plan" id="medio-dia" required>
+                        <label for="medio-dia">Medio día</label>
 
-                    <input type="radio" name="plan" id="medio-dia" required>
-                    <label for="medio-dia">Medio día</label>
+                        <input type="radio" name="plan" id="dia-completo" required>
+                        <label for="dia-completo">Día completo</label> <br> <br>
 
-                    <input type="radio" name="plan" id="dia-completo" required>
-                    <label for="dia-completo">Día completo</label> <br> <br>
+                        <label for="cantidad">Cantidad de bicicletas</label> <br>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="6" required> <br><br>
 
-                    <label for="cantidad">Cantidad de bicicletas</label> <br>
-                    <input type="number" id="cantidad" name="cantidad" min="1" max="6" required> <br><br>
+                        <label for="recorrido">Recorrido guiado</label>
+                        <select name="recorrido" id="recorrido">
+                            <option value="">Selecciona un recorrido</option>
+                            <option value="ruta-1">Rios y parques</option>
+                            <option value="ruta-2">Sabores de barrio</option>
+                            <option value="ruta-3">Reto las palmas</option>
 
-                    <label for="recorrido">Recorrido guiado</label> <br>
-                    <select name="recorrido" id="recorrido">
-                        <option value="">Selecciona un recorrido</option>
-                        <option value="ruta-1">Rios y parques</option>
-                        <option value="ruta-2">Sabores de barrio</option>
-                        <option value="ruta-3">Reto las palmas</option> <br><br>
+                        </select>
 
-                    </select>
+                    </fieldset>
 
-                </fieldset>
+                    <fieldset>
+                        <legend><h3>Confirmación</h3></legend>
+                        <label for="comentarios">Comentarios</label> <br>
+                        <textarea name="comentarios" id="comentarios" placeholder="agrega información adicional que consideres necesaria" maxlength="300"></textarea><br><br>
 
-                <fieldset>
-                    <legend><h3>Confirmación</h3></legend>
-                    <label for="comentarios">Comentarios</label> <br>
-                    <textarea name="comentarios" id="comentarios" placeholder="agrega información adicional que consideres necesaria" maxlength="300"></textarea><br><br>
+                        <input type="checkbox" id="politicas" name="politicas" required>
+                        <label for="politicas">Aceptacion de las politicas de alquiler</label> <br><br>
 
-                    <input type="checkbox" id="politicas" name="politicas" required>
-                    <label for="politicas">Aceptacion de las politicas de alquiler</label> <br><br>
+                        <button type="submit">Confirmar reserva</button>
 
-                    <button type="submit">Confirmar reserva</button>
+                    </fieldset>
 
-                </fieldset>
+                </form>
 
-            </form>
-
-        </section>
-        
+            </section>
+            
+            <aside class="informacion-contacto">
+                <dl><strong>Nuestros Horarios de atención</strong>
+                    <dt> <em>Lunes a Viernes</em></dt>
+                    <dd> 7:00 am a 5:00 pm</dd>
+                    <dt><em>Sabados, domingos y festivos</em></dt>
+                    <dd> 5:00 am a 3:00 pm</dd>
+                </dl>
+            </aside>  
+        </div>  
 
     </main>
-
-    <aside>
-        <dl><strong>Nuestros Horarios de atención</strong>
-            <dt> <em>Lunes a Viernes</em></dt>
-            <dd> 7:00 am a 5:00 pm</dd>
-            <dt><em>Sabados, domingos y festivos</em></dt>
-            <dd> 5:00 am a 3:00 pm</dd>
-        </dl>
-    </aside>
 
     <footer>
         <p><strong> &copy; Rueda libre</strong></p>
