@@ -250,3 +250,27 @@ La imagen de la tabla de pruebas se encuentra en un archivo .png en la carpeta i
 # Se aplica flexbox a CSS
     Al aplicar display flex al encabezado y el pie, el texto se adecua a las pantallas pequeñas
 
+SEMANA 2
+
+# La flota en cuadrícula: CSS Grid y Flexbox
+
+    * Pruebas de adaptabilidad
+
+    Se realizaron pruebas utilizando el modo dispositivo de las herramientas de desarrollador del navegador (DevTools).
+
+    Los resultados observados fueron:
+
+    | Ancho de pantalla | Columnas observadas |
+    | 1280 px | 4 |
+    | 900 px | 3 |
+    | 500 px | 2 |
+
+    Los resultados demuestran que la cuadrícula reorganiza automáticamente las bicicletas según el espacio disponible, sin necesidad de establecer media queries para modificar la cantidad de columnas.
+
+    * Justificación técnica
+
+    Se eligió CSS Grid para organizar la flota porque permite distribuir elementos en dos dimensiones, filas y columnas, y adaptar su distribución al espacio disponible.
+
+    Por otra parte, se utilizó Flexbox dentro de cada tarjeta porque los elementos tienen una distribución principalmente vertical. La propiedad `margin-top: auto` permite que los enlaces de reserva permanezcan al final de las tarjetas, incluso cuando las descripciones tienen diferentes longitudes.
+
+    La combinación de ambas tecnologías permite mantener una presentación organizada, uniforme y adaptable.

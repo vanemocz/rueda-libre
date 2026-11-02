@@ -197,18 +197,27 @@ th {
 /*Tarjetas*/
 
 #nuestra-flota{
-    display: grid;
+    padding: var(--espaciado-grande)0;
 }
 
 .tarjetas-bicicletas {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: var(--espaciado-mediano);
 }
 
 .tarjeta-bicicleta {
-    flex: 1;
-    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 0.5rem;
     position: relative;
+}
+
+.tarjeta-bicicleta .boton-reserva {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .tarjeta-bicicleta img {
