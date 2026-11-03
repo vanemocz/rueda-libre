@@ -1,6 +1,9 @@
-/*Variables*/
+/* ==================================================
+   1. VARIABLES GLOBALES
+   ================================================== */
 
 :root {
+    /* Colores */
     --color-fondo: #FAF6EF;
     --color-titulos: #14213D;
     --color-texto-principal: #14213D;
@@ -9,19 +12,24 @@
     --color-enlaces: #1E7A4F;
     --color-boton-secundario: #F39A2B;
 
+    /* Tipografías */
     --fuente-titulos: "Montserrat", sans-serif;
     --fuente-textos: "Open Sans", sans-serif;
 
+    /* Espaciados */
     --espaciado-pequeno: 0.5rem;
     --espaciado-mediano: 1rem;
     --espaciado-grande: 2rem;
 }
 
+
+/* ==================================================
+   2. CONFIGURACIÓN GENERAL Y ESTILOS BASE
+   ================================================== */
+
 * {
     box-sizing: border-box;
 }
-
-/*Base*/
 
 body {
     font-family: var(--fuente-textos);
@@ -39,18 +47,30 @@ h6 {
     font-weight: 700;
 }
 
-/*Navegacion*/
 
-header{
+/* ==================================================
+   3. ENCABEZADO Y NAVEGACIÓN
+   ================================================== */
+
+header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: var(--espaciado-mediano);
+    padding: var(--espaciado-mediano);
+    text-align: center;
 }
 
-#menu{
+#menu {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: var(--espaciado-pequeno);
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 #menu li {
@@ -61,16 +81,15 @@ header{
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    
 }
 
-#menu a{ 
+#menu a {
     color: var(--color-texto-secundario);
 }
 
 #menu a.activo {
     color: var(--color-boton-principal);
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 #menu a:hover {
@@ -82,6 +101,13 @@ header{
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
 }
+
+
+/* ==================================================
+   4. ENLACES Y BOTONES
+   ================================================== */
+
+/* Enlaces generales */
 
 a {
     color: var(--color-enlaces);
@@ -96,6 +122,8 @@ a:focus {
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
 }
+
+/* Botón de reserva */
 
 .boton-reserva {
     display: inline-block;
@@ -116,12 +144,10 @@ a:focus {
     outline-offset: 3px;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
-}
+
+/* ==================================================
+   5. CONTENEDORES PRINCIPALES
+   ================================================== */
 
 main {
     width: 100%;
@@ -129,12 +155,16 @@ main {
     margin: 0 auto;
 }
 
+
+/* ==================================================
+   6. PORTADA
+   ================================================== */
+
 #banner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: var(--espaciado-mediano);
     align-items: center;
-    gap: var(--espaciado-grande);
-    min-height: 70vh;
 }
 
 .banner-imagen img {
@@ -144,7 +174,10 @@ main {
     display: block;
 }
 
-/*Nuestros servicios*/
+
+/* ==================================================
+   7. NUESTROS SERVICIOS
+   ================================================== */
 
 #nuestros-servicios article {
     padding: 1.5rem;
@@ -157,57 +190,12 @@ main {
     width: 100%;
 }
 
-/*Tablas*/
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+/* ==================================================
+   8. NUESTRA FLOTA DE BICICLETAS
+   ================================================== */
 
-th,
-td {
-    padding: 0.75rem;
-    border: 1px solid var(--color-texto-secundario);
-}
-
-th {
-    background-color: var(--color-titulos);
-    color: var(--color-fondo);
-}
-
-/*Formulario*/
-
-#formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
-#formulario-reserva select,
-#formulario-reserva textarea {
-    width: 100%;
-}
-
-#formulario-reserva fieldset {
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-#formulario-reserva button[type="submit"] {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-boton-principal);
-    color: var(--color-fondo);
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-#formulario-reserva button:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
-}
-
-#formulario-reserva button:hover {
-    background-color: var(--color-titulos);
-}
-
-/*Tarjetas*/
-
-#nuestra-flota{
+#nuestra-flota {
     padding: var(--espaciado-grande) 0;
 }
 
@@ -238,6 +226,8 @@ th {
     display: block;
 }
 
+/* Etiqueta de producto nuevo */
+
 .etiqueta-nuevo {
     position: absolute;
     top: 10px;
@@ -250,15 +240,19 @@ th {
     font-weight: 700;
 }
 
-/* Galería de rutas */
+
+/* ==================================================
+   9. GALERÍA DE RUTAS
+   ================================================== */
 
 .galeria-rutas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--espaciado-mediano);
 }
 
 .tarjeta-ruta {
+    min-width: 0;
     padding: var(--espaciado-mediano);
     border: 1px solid var(--color-texto-secundario);
     border-radius: 0.5rem;
@@ -272,17 +266,115 @@ th {
     display: block;
 }
 
+
+/* ==================================================
+   10. TABLAS
+   ================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid var(--color-texto-secundario);
+}
+
+th {
+    background-color: var(--color-titulos);
+    color: var(--color-fondo);
+}
+
+
+/* ==================================================
+   11. FORMULARIO DE RESERVAS
+   ================================================== */
+
+/* Ancho de los campos */
+
+#formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
+#formulario-reserva select,
+#formulario-reserva textarea {
+    width: 100%;
+}
+
+/* Organización de los grupos */
+
+#formulario-reserva fieldset {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón de envío */
+
+#formulario-reserva button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-boton-principal);
+    color: var(--color-fondo);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#formulario-reserva button:focus {
+    outline: 2px solid var(--color-titulos);
+    outline-offset: 3px;
+}
+
+#formulario-reserva button:hover {
+    background-color: var(--color-titulos);
+}
+
+/* Indicadores de enfoque */
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--color-titulos);
+    outline-offset: 3px;
+}
+
+
+/* ==================================================
+   12. DISTRIBUCIÓN DE LA PÁGINA DE RESERVAS
+   ================================================== */
+
+.layout-reservas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--espaciado-grande);
+    align-items: start;
+}
+
+/* Campos de documento */
+
+.datos-documento {
+    display: flex;
+    gap: var(--espaciado-mediano);
+}
+
+.datos-documento div {
+    flex: 1;
+}
+
+
+/* ==================================================
+   13. BOTÓN FLOTANTE DE WHATSAPP
+   ================================================== */
+
 .boton-whatsapp {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 12px;
+    right: 12px;
     background-color: #25D366;
     color: white;
-    padding: 12px 16px;
+    padding: 0.6rem 0.9rem;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
     z-index: 1000;
+    font-size: 0.9rem;
 }
 
 .boton-whatsapp:hover {
@@ -294,31 +386,98 @@ th {
     outline-offset: 3px;
 }
 
+
+/* ==================================================
+   14. PIE DE PÁGINA
+   ================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--espaciado-grande);
-    padding: var(--espaciado-pequeno);
+    gap: var(--espaciado-mediano);
+    padding: var(--espaciado-mediano);
     background-color: var(--color-texto-secundario);
     color: var(--color-fondo);
     border-radius: 15px;
     text-align: center;
 }
 
-.layout-reservas {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--espaciado-grande);
-    align-items: start;
+footer p {
+    margin: 0;
+    overflow-wrap: anywhere;
 }
 
-.datos-documento {
-    display: flex;
-    gap: var(--espaciado-mediano);
+ /* TABLET: desde 768 px */
+
+@media (min-width: 768px) {
+
+    /* Encabezado */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    #menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #menu li a {
+        padding: 0.5rem;
+    }
+
 }
 
-.datos-documento div {
-    flex: 1;
+/* ESCRITORIO: desde 1200 px */
+
+@media (min-width: 1200px) {
+
+    #banner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* TABLET: desde 768 px */
+
+@media (min-width: 768px) {
+
+    .galeria-rutas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (min-width: 678px) {
+    .layout-reservas {
+        grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+    }
+}
+
+/* ESCRITORIO: desde 1200 px */
+
+@media (min-width: 1200px) {
+
+    .galeria-rutas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--espaciado-grande);
+    }
 }
