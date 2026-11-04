@@ -303,3 +303,24 @@ SEMANA 2
     6. Pie de página – Flexbox
 
     Se utilizó Flexbox para organizar horizontalmente los elementos del pie de página: derechos de autor, correo electrónico y año. 
+
+# Diseño responsive – Versión 1.5
+
+    Problemas encontrados y soluciones
+
+        Formulario de reservas: En móviles se dividía en dos columnas. Se ajustó con CSS Grid para mostrar una columna y activar dos columnas desde 678 px.
+
+        Tablas de tarifas: El contenido ocupaba demasiado espacio. Se redujo el relleno de las celdas y el tamaño de la letra para evitar el desplazamiento horizontal.
+
+        Imágenes: Algunas podían superar el ancho de su contenedor. Se aplicó max-width: 100% y height: auto para adaptarlas a diferentes pantallas.
+
+    Pruebas realizadas
+
+        Se verificó el sitio mediante DevTools en las siguientes resoluciones:
+
+        360 px: visualización móvil correcta.
+
+        768 px: distribución para tablet correcta.
+
+        1280 px: visualización de escritorio correcta.
+
