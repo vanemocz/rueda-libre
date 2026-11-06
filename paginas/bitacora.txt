@@ -324,3 +324,15 @@ SEMANA 2
 
         1280 px: visualización de escritorio correcta.
 
+# Implementacion Bootstrap
+
+    tiempo invertido, para entender Bootstrap el tiempo invertido a sido bastante pero para aplicarlo me demore menos que aplicando CSS, el tiempo invertido fue de 1:30 aproximadamente a la flota de bicicletas. 
+
+    - 25 líneas de CSS de distribución de la flota en mi versión propia.
+    - 6 clases usadas en Bootstrap: col-12, col-sm-6, col-lg-4, col-xl-3, g-4, img-fluid.
+
+    Me facilito:
+        Bootstrap facilitó la creación de una cuadrícula responsive.
+    Control perdido:
+        En la versión propia podía definir cada comportamiento mediante CSS, mientras que con Bootstrap dependí de sus clases y configuraciones predefinidas.
+
