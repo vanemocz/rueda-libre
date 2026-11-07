@@ -336,3 +336,11 @@ SEMANA 2
     Control perdido:
         En la versión propia podía definir cada comportamiento mediante CSS, mientras que con Bootstrap dependí de sus clases y configuraciones predefinidas.
 
+#Mini reto 6, dia 2, semana 2
+
+    p-3 agrega espacio interno.
+    d-flex convierte el elemento en flexible. 
+    flex-column organiza en vertical. 
+    gap-2 separa los elementos.
+    text-bg-light pone fondo claro con texto legible.
+    lead para texto destacado
