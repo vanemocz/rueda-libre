@@ -10,227 +10,369 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1><strong>RUEDA LIBRE</strong></h1>
+    <!-- Encabezado con menu navegación -->
+
+    <header class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-3">
+        <h1 class="mb-0"><strong>RUEDA LIBRE</strong></h1>
         <nav>
-            <menu id="menu">
+            <ul id="menu" class="d-flex flex-wrap justify-content-center gap-2 mb-0">
                 <li><a href="index.html" class="activo"> Inicio</a></li>
                 <li><a href="paginas/tarifas.html"> Tarifas</a></li>
                 <li><a href="paginas/tarifas.html#tabla-recorridos"> Rutas</a></li>
                 <li><a href="paginas/reservas.html"> Reservas</a></li>
-            </menu>
+            </ul>
         </nav>
     </header>
 
+    <!-- Todo el contenido principal -->
+
     <main id="contenido">
 
-        <section id="banner">
-            <div class="banner-contenido">
-                <p>Bienvenido a rueda libre <a href="#Encuentranos">Encuentranos</a></p>
+        <!-- Portada -->
 
-                <p>Descubre una nueva forma de recorrer la ciudad y disfrutar de la naturaleza sobre dos ruedas.
-                    <em><strong>En Rueda Libre queremos que cada recorrido se convierta en una experiencia para
-                            recordar.</strong></em> Elige tu bicicleta, planea tu próxima aventura y disfruta de la
-                    libertad
-                    de pedalear a tu propio ritmo.
-                </p>
-            </div>
+        <section id="portada">
+            <div class="container">
+                <div class="row align-items-center g-3">
+                    <div class="portada-contenido col-12 col-md-6">
 
-            <div class="banner-imagen">
-                <img src="img/portada-rueda-libre.png" alt="imagen bicicleta con paisaje" width="500">
-            </div>
+                        <p>Bienvenido a rueda libre <a href="#Encuentranos">Encuentranos</a></p>
 
-        </section>
+                        <p>Descubre una nueva forma de recorrer la ciudad y disfrutar de la naturaleza sobre dos ruedas.
+                            <em><strong>En Rueda Libre queremos que cada recorrido se convierta en una experiencia para
+                                    recordar.</strong></em> Elige tu bicicleta, planea tu próxima aventura y disfruta de la
+                            libertad
+                            de pedalear a tu propio ritmo.
+                        </p>
+                    </div>
 
-        <section id="nuestra-flota">
-
-            <section class="encabezado-flota">
-                <h2>Nuestra Flota</h2>
-                <p>Explora la ciudad o disfruta de un paseo al aire libre con nuestras bicicletas. <strong>Incluye casco
-                        y candado</strong> para que tengas los elementos básicos durante tu recorrido. Elige el tipo de
-                    bicicleta y el tiempo de alquiler que mejor se adapte a tus planes.</p>
-            </section>
-
-            <div class="tarjetas-bicicletas">
-                <article class="tarjeta-bicicleta">
-                    <img src="img/bicicleta urbana.jpeg" alt="bicicleta urbana">
-                    <h4>Urbana Clásica</h4>
-                    <p>Cómoda y liviana para las ciclorrutas.</p>
-                    <p>$10.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <img src="img/urbana plegable.jpeg" alt="bicicleta urbana plegable">
-                    <h4>Urbana Plegable</h4>
-                    <p>Se dobla en segundos; ideal para combinar con el metro.</p>
-                    <p>$12.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <img src="img/bicicleta montaña.png" alt="bicicleta de montaña">
-                    <h4>Montaña Trail</h4>
-                    <p>Suspensión delantera y 21 cambios para las subidas.</p>
-                    <p>$15.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <img src="img/gravel aventura.jpeg" alt="bicicleta gravel aventura">
-                    <h4>Gravel Aventura</h4>
-                    <p>Para rutas mixtas de asfalto y destapado.</p>
-                    <p>$18.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <span class="etiqueta-nuevo">Nuevo</span>
-                    <img src="img/bicicleta electrica.jpeg" alt="bicicleta electrica urbana">
-                    <h4>Eléctrica Urbana</h4>
-                    <p>Asistencia eléctrica con 45 km de autonomía.</p>
-                    <p>$25.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <img src="img/bicicleta infantil.jpeg" alt="bicicleta infantil">
-                    <h4>Infantil</h4>
-                    <p>Para niños de 6 a 10 años.</p>
-                    <p>$8.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
-                <article class="tarjeta-bicicleta">
-                    <img src="img/bicicleta tandem.jpeg" alt="bicicleta tandem">
-                    <h4>Tándem</h4>
-                    <p>Para dos personas, ideal para compartir la experiencia de pedalear.</p>
-                    <p>$20.000</p>
-                    <a href="paginas/reservas.html" class="boton-reserva">Reserva ahora</a>
-                </article>
+                    <div class="portada-imagen col-12 col-md-6">
+                        <img src="img/portada-rueda-libre.png" alt="imagen bicicleta con paisaje" width="500" class="rounded-4">
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Nuestros servicios -->
 
         <section id="nuestros-servicios">
-            <h2>Nuestros servicios</h2>
-            <article id="alquiler">
-                <h3>Alquiler</h3>
-                <p>Explora la ciudad o disfruta de un paseo al aire libre con nuestras bicicletas. <strong>Incluye casco
-                        y candado</strong> para que tengas los elementos básicos durante tu recorrido. Elige el tipo de
-                    bicicleta y el tiempo de alquiler que mejor se adapte a tus planes.</p>
-                <a href="paginas/tarifas.html">Conoce nuestras tarifas</a>
-            </article>
+            <div class="container">
 
-            <article id="compra">
-                <h3>Compra</h3>
-                <p>Encuentra una bicicleta que se adapte a tu estilo de vida y a los recorridos que más disfrutas. Te
-                    ayudamos a elegir una opción adecuada para tus necesidades, ya sea para movilizarte por la ciudad,
-                    entrenar o explorar nuevos caminos. <strong><em>Al comprar con nosotros se aplica un 20% de
-                            descuento en la compra de tus implementos.</em></strong> Equípate para pedalear con
-                    comodidad y seguridad.</p>
-            </article>
+                <h2 class="text-center mb-3 mt-3">Nuestros servicios</h2>
 
-            <article id="taller">
-                <h3>Taller reparacion</h3>
-                <p>Cuida tu bicicleta y mantenla lista para tu próxima aventura. <strong>Contamos con un taller completo
-                        para las reparaciones que tu bicicleta necesite.</strong> Nuestro objetivo es ayudarte a
-                    conservarla en buenas condiciones para que disfrutes cada recorrido con mayor tranquilidad.</p>
-                <h4>Todos los implementos para ti y tu bicicleta</h4>
-                <p>Encuentra implementos y accesorios para acompañarte en tus recorridos. Equípate para pedalear con
-                    comodidad, mejorar tu experiencia sobre la bicicleta y contar con elementos útiles para tus salidas.
-                </p>
-            </article>
+                <article id="alquiler">
+                    <h3>Alquiler</h3>
+                    <p>Explora la ciudad o disfruta de un paseo al aire libre con nuestras bicicletas. <strong>Incluye casco
+                            y candado</strong> para que tengas los elementos básicos durante tu recorrido. Elige el tipo de
+                        bicicleta y el tiempo de alquiler que mejor se adapte a tus planes.</p>
+                    <a href="paginas/tarifas.html">Conoce nuestras tarifas</a>
+                </article>
 
-            <article>
-                <h3>Recorridos guiados</h3>
-                <p>Descubre nuevos lugares, comparte el camino con otros ciclistas y conoce diferentes rincones de la
-                    ciudad. <a href="paginas/tarifas.html#tabla-recorridos">Conoce nuestros recorridos</a> y elige la
-                    ruta que mejor se adapte a tu experiencia y condición física.</p>
-                <img src="img/recorrido-guiado.jpg" alt="imagen recorrido guiado" width="400">
-            </article>
+                <article id="compra">
+                    <h3>Compra</h3>
+                    <p>Encuentra una bicicleta que se adapte a tu estilo de vida y a los recorridos que más disfrutas. Te
+                        ayudamos a elegir una opción adecuada para tus necesidades, ya sea para movilizarte por la ciudad,
+                        entrenar o explorar nuevos caminos. <strong><em>Al comprar con nosotros se aplica un 20% de
+                                descuento en la compra de tus implementos.</em></strong> Equípate para pedalear con
+                        comodidad y seguridad.</p>
+                </article>
 
+                <article id="taller">
+                    <h3>Taller reparacion</h3>
+                    <p>Cuida tu bicicleta y mantenla lista para tu próxima aventura. <strong>Contamos con un taller completo
+                            para las reparaciones que tu bicicleta necesite.</strong> Nuestro objetivo es ayudarte a
+                        conservarla en buenas condiciones para que disfrutes cada recorrido con mayor tranquilidad.</p>
+                    <h4>Todos los implementos para ti y tu bicicleta</h4>
+                    <p>Encuentra implementos y accesorios para acompañarte en tus recorridos. Equípate para pedalear con
+                        comodidad, mejorar tu experiencia sobre la bicicleta y contar con elementos útiles para tus salidas.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Recorridos guiados</h3>
+                    <p>Descubre nuevos lugares, comparte el camino con otros ciclistas y conoce diferentes rincones de la
+                        ciudad. <a href="paginas/tarifas.html#tabla-recorridos">Conoce nuestros recorridos</a> y elige la
+                        ruta que mejor se adapte a tu experiencia y condición física.</p>
+                    <img src="img/recorrido-guiado.jpg" alt="imagen recorrido guiado" class="img-fluid imagen-recorridos">
+                </article>
+
+            </div>
         </section>
+
+        <!-- Nuestra flota -->
+
+        <section id="nuestra-flota">
+            <div class="container">
+                <div class="encabezado-flota text-center mt-3 mb-3">
+                    <h2>Nuestra Flota</h2>
+                    <p class="fs-6">Explora la ciudad o disfruta de un paseo al aire libre con nuestras bicicletas. <strong>Incluye
+                            casco
+                            y candado</strong> para que tengas los elementos básicos durante tu recorrido. Elige el tipo
+                        de
+                        bicicleta y el tiempo de alquiler que mejor se adapte a tus planes.</p>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/bicicleta urbana.jpeg" alt="bicicleta urbana">
+                            <h4>Urbana Clásica</h4>
+                            <p class="lead">Cómoda y liviana para las ciclorrutas.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$10.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/urbana plegable.jpeg" alt="bicicleta urbana plegable">
+                            <h4>Urbana Plegable</h4>
+                            <p class="lead">Se dobla en segundos; ideal para combinar con el metro.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$12.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/bicicleta montaña.png" alt="bicicleta de montaña">
+                            <h4>Montaña Trail</h4>
+                            <p class="lead">Suspensión delantera y 21 cambios para las subidas.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$15.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/gravel aventura.jpeg" alt="bicicleta gravel aventura">
+                            <h4>Gravel Aventura</h4>
+                            <p class="lead">Para rutas mixtas de asfalto y destapado.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$18.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <span class="etiqueta-nuevo">Nuevo</span>
+                            <img class="img-fluid" src="img/bicicleta electrica.jpeg"
+                                alt="bicicleta electrica urbana">
+                            <h4>Eléctrica Urbana</h4>
+                            <p class="lead">Asistencia eléctrica con 45 km de autonomía.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$25.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/bicicleta infantil.jpeg" alt="bicicleta infantil">
+                            <h4>Infantil</h4>
+                            <p class="lead">Para niños de 6 a 10 años.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$8.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article
+                            class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
+                            <img class="img-fluid" src="img/bicicleta tandem.jpeg" alt="bicicleta tandem">
+                            <h4>Tándem</h4>
+                            <p class="lead">Para dos personas, ideal para compartir la experiencia de pedalear.</p>
+                            <p class="fw-bold fs-5 mb-0 mt-auto">$20.000</p>
+                            <a href="paginas/reservas.html"
+                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                ahora</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria rutas -->
 
         <section id="nuestras-rutas">
 
-            <h2>Nuestras rutas</h2>
+            <div class="container">
 
-            <div class="galeria-rutas">
+                <h2 class="text-center mt-4 mb-4">Nuestras rutas</h2>
 
-                <article class="tarjeta-ruta">
-                    <img src="img/recorrido-rio-parques.jpeg" alt="Recorrido Río Parques">
-                    <h4>Recorrido Río y Parques</h4>
-                    <p>Distancia: 12 km</p>
-                    <p>Duración: 2 horas</p>
-                    <p>Nivel: Fácil</p>
-                </article>
+                <div class="galeria-rutas row g-3">
 
-                <article class="tarjeta-ruta">
-                    <img src="img/recorrido-barrio.jpeg" alt="Recorrido Sabores de Barrio">
-                    <h4>Recorrido Sabores de Barrio</h4>
-                    <p>Distancia: 18 km</p>
-                    <p>Duración: 3 horas</p>
-                    <p>Nivel: Medio</p>
-                </article>
-
-                <article class="tarjeta-ruta">
-                    <img src="img/recorrido-palmas.jpeg" alt="Recorrido Palmas">
-                    <h4>Recorrido Palmas</h4>
-                    <p>Distancia: 25 km</p>
-                    <p>Duración: 4 horas</p>
-                    <p>Nivel: Difícil</p>
-                </article>
-
+                    <div class=" col-12 col-md-6 col-xl-4">
+                        <article class="tarjeta-ruta h-100">
+                            <img src="img/recorrido-rio-parques.jpeg" alt="Recorrido Río Parques" class="img-fluid">
+                            <h4>Recorrido Río y Parques</h4>
+                            <p>Distancia: 12 km</p>
+                            <p>Duración: 2 horas</p>
+                            <p>Nivel: Fácil</p>
+                        </article>
+                    </div>
+                    <div class=" col-12 col-md-6 col-xl-4">
+                        <article class="tarjeta-ruta h-100">
+                            <img src="img/recorrido-barrio.jpeg" alt="Recorrido Sabores de Barrio" class="img-fluid">
+                            <h4>Recorrido Sabores de Barrio</h4>
+                            <p>Distancia: 18 km</p>
+                            <p>Duración: 3 horas</p>
+                            <p>Nivel: Medio</p>
+                        </article>
+                    </div>
+                    <div class=" col-12 col-md-6 col-xl-4">
+                        <article class="tarjeta-ruta h-100">
+                            <img src="img/recorrido-palmas.jpeg" alt="Recorrido Palmas" class="img-fluid">
+                            <h4>Recorrido Palmas</h4>
+                            <p>Distancia: 25 km</p>
+                            <p>Duración: 4 horas</p>
+                            <p>Nivel: Difícil</p>
+                        </article>
+                    </div>
+                </div>
             </div>
-
         </section>
+        
+        <!-- Benefios - Por qué rueda libre -->
+
+        <section id="beneficios-rueda-libre">
+            <div class="container">
+                <section class="encabezado-beneficios text-center">
+                    <h2 class="fs-2 mb-4 mt-4">Por qué elegir Rueda Libre</h2>
+                </section>
+
+                <div class="row g-2">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <article class="p-3 h-100 d-flex flex-column border rounded bg-white">
+                            <h3 class="fw-bold">Bicicletas revisadas en cada alquiler</h3>
+                            <p class="lead">Todas nuestras bicicletas son revisadas y mantenidas en perfecto
+                                estado antes de cada alquiler para
+                                garantizar tu seguridad y comodidad.</p>
+                            <p class="text-success fw-bold fs-5 mt-auto">Taller de confianza</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <article class="p-3 h-100 d-flex flex-column border rounded bg-white">
+                            <h3 class="fw-bold">Casco y candados incluidos</h3>
+                            <p class="lead">Incluyen casco y candado para tu seguridad durante el alquiler.
+                            </p>
+                            <p class="text-success fw-bold fs-5 mt-auto">Por solo $5.000</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <article class="p-3 h-100 d-flex flex-column border rounded bg-white">
+                            <h3 class="fw-bold">Guias certificados</h3>
+                            <p class="lead">Nuestros guías están certificados y tienen amplia experiencia en
+                                el área para ofrecer una experiencia de
+                                pedaleo segura y divertida.</p>
+                            <p class="text-success fw-bold fs-5 mt-auto">Guía profesional</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <article class="p-3 h-100 d-flex flex-column border rounded bg-white">
+                            <h3 class="fw-bold">Puntos de devolucion en tres sedes</h3>
+                            <p class="lead">Tienes la flexibilidad de devolver la bicicleta en cualquiera de
+                                nuestras tres sedes convenientemente
+                                ubicadas.</p>
+                            <p class="text-success fw-bold fs-5 mt-auto">Devolución flexible</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="listo">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center justify-content-between flex-md-row p-3 bg-secondary-subtle mt-4 rounded">
+                    <p class="fs-3 mb-0">¿Listo para pedalear?</p>
+                    <img src="img/como-llegar.jpg" alt="Ciclista reservando"
+                        class="img-fluid p-2 d-none d-md-block w-50 rounded-4">
+                    <a href="paginas/reservas.html" class="text-success fw-semibold fs-3 p-2">Reserva
+                        ahora</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Preguntas frecuentes -->
 
         <section id="preguntas">
-            <h2>¿Como alquilar?</h2>
+            <div class="container py-3">
+                <h2 class="mb-3">¿Como alquilar?</h2>
 
-            <ol>
-                <li>Valida la disponibilidad</li>
-                <li>Reserva el servicio</li>
-                <li>Confirma el servicio</li>
-                <li>Hazlo efectivo y disfruta</li>
-            </ol>
+                <ol class="mb-3">
+                    <li>Valida la disponibilidad</li>
+                    <li>Reserva el servicio</li>
+                    <li>Confirma el servicio</li>
+                    <li>Hazlo efectivo y disfruta</li>
+                </ol>
 
-            <a href="paginas/reservas.html" class="boton-reserva"> Reserva ahora </a>
-            <p>Beneficios de alquilar con Rueda Libre</p>
+                <a href="paginas/reservas.html" class="btn btn-success"> Reserva ahora </a>
 
-            <ul>
-                <li>Disponibilidad de 15 tipos diferentes de bicicletas</li>
-                <li>Reservas en todos los horarios</li>
-                <li>En caso de cancelacion puedes reembolsar tu dinero</li>
-            </ul>
-
-            <h2>¿Quienes somos?</h2>
-            <p>Somos Rueda Libre, un espacio para quienes disfrutan de la bicicleta como medio de transporte, actividad
-                física y forma de descubrir nuevos lugares. Queremos acercar el ciclismo a más personas a través del
-                alquiler de bicicletas, la venta de bicicletas e implementos, el servicio de taller y los recorridos
-                guiados. Trabajamos para ofrecerte opciones que se adapten a tus planes y te animen a vivir nuevas
-                experiencias sobre dos ruedas.</p>
-            <p>Contactanos<a href="mailto:hola@ruedalibre.example"> Correo Electronico</a></p>
+                <h2 class="mt-4 mb-4">¿Quienes somos?</h2>
+                <p>Somos Rueda Libre, un espacio para quienes disfrutan de la bicicleta como medio de transporte, actividad
+                    física y forma de descubrir nuevos lugares. Queremos acercar el ciclismo a más personas a través del
+                    alquiler de bicicletas, la venta de bicicletas e implementos, el servicio de taller y los recorridos
+                    guiados. Trabajamos para ofrecerte opciones que se adapten a tus planes y te animen a vivir nuevas
+                    experiencias sobre dos ruedas.</p>
+                <p>Contactanos<a href="mailto:hola@ruedalibre.example"> Correo Electronico</a></p>
+            </div>
+            
         </section>
 
         <section id="Encuentranos">
 
-            <h2><a href="https://www.google.com/maps" target="_blank">Encuentranos</a></h2>
-            <p>¿Quieres visitarnos o conocer más sobre nuestros servicios? Ponte en contacto con Rueda Libre para
-                consultar la información que necesitas y planear tu próxima salida en bicicleta. ¡Estamos listos para
-                acompañarte en tu próxima aventura!</p>
-            <img src="img/como-llegar.jpg" alt="imagen decorativa" width="450">
+            <div class="container">
+                <h2><a href="https://www.google.com/maps" target="_blank">Encuentranos</a></h2>
+                <p>¿Quieres visitarnos o conocer más sobre nuestros servicios? Ponte en contacto con Rueda Libre para
+                    consultar la información que necesitas y planear tu próxima salida en bicicleta. ¡Estamos listos para
+                    acompañarte en tu próxima aventura!</p>
+                <img src="img/encuentranos.jpeg" alt="imagen decorativa" class="img-fluid imagen-encuentranos">
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
+    <!-- Pie de pagina -->
+
+    <footer class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3 text-center">
         <p><strong> &copy; Rueda libre</strong></p>
         <p>hola@ruedalibre.example</p>
         <p>2026</p>
     </footer>
 
+    <!-- Enlace Whatsapp -->
+
     <a href="https://wa.me/573000000000" class="boton-whatsapp" target="_blank" rel="noopener noreferrer"
         aria-label="Contáctanos por WhatsApp">WhatsApp</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 

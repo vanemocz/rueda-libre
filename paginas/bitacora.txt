@@ -336,7 +336,7 @@ SEMANA 2
     Control perdido:
         En la versión propia podía definir cada comportamiento mediante CSS, mientras que con Bootstrap dependí de sus clases y configuraciones predefinidas.
 
-#Mini reto 6, dia 2, semana 2
+# Mini reto 6, dia 2, semana 2
 
     p-3 agrega espacio interno.
     d-flex convierte el elemento en flexible. 
@@ -344,3 +344,11 @@ SEMANA 2
     gap-2 separa los elementos.
     text-bg-light pone fondo claro con texto legible.
     lead para texto destacado
+
+# mini reto 7: Conflictos identificados y soluciones:
+
+    Distribución de elementos: existían reglas Flexbox y Grid propias que se superponían con Bootstrap. Se retiraron las reglas de distribución reemplazadas por las clases de Bootstrap.
+
+    Espaciados y márgenes: algunas tarjetas presentaban diferencias de alineación. Se utilizaron utilidades como gap-2, mt-auto y h-100 para organizar su contenido.
+
+    Estilos tipográficos y colores: se revisaron las declaraciones heredadas y los estilos aplicados mediante DevTools para identificar posibles conflictos y conservar la apariencia visual definida para el proyecto.
