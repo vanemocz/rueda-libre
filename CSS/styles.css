@@ -26,9 +26,6 @@
    2. CONFIGURACIÓN GENERAL Y ESTILOS BASE
    ================================================== */
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     font-family: var(--fuente-textos);
@@ -49,10 +46,6 @@ h6 {
 /* ==================================================
    3. ENCABEZADO Y NAVEGACIÓN
    ================================================== */
-
-header {
-    text-align: center;
-}
 
 /* Navbar Rueda Libre */
 
@@ -81,37 +74,7 @@ header {
 }
 
 /* ==================================================
-   4. ENLACES Y BOTONES
-   ================================================== */
-
-/* Enlaces generales */
-
-a {
-    color: var(--color-enlaces);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
-}
-
-/* ==================================================
-   5. CONTENEDORES PRINCIPALES
-   ================================================== */
-
-main {
-    width: 100%;
-    max-width: 70rem;
-    margin: 0 auto;
-}
-
-/* ==================================================
-   6. NUESTROS SERVICIOS
+   4. NUESTROS SERVICIOS
    ================================================== */
 
 #nuestros-servicios article {
@@ -131,27 +94,8 @@ main {
 }
 
 /* ==================================================
-   7. NUESTRA FLOTA DE BICICLETAS
+   5. NUESTRA FLOTA DE BICICLETAS
    ================================================== */
-
-#nuestra-flota {
-    padding: var(--espaciado-grande) 0;
-}
-
-.tarjeta-bicicleta {
-    padding: 1rem;
-    border: 1px solid var(--color-texto-secundario);
-    border-radius: 0.5rem;
-    position: relative;
-    background-color: white;
-}
-
-.tarjeta-bicicleta img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    display: block;
-}
 
 /* Etiqueta de producto nuevo */
 
@@ -167,36 +111,24 @@ main {
     font-weight: 700;
 }
 
-/* ==================================================
-   8. GALERÍA DE RUTAS
-   ================================================== */
-
-.tarjeta-ruta {
-    min-width: 0;
-    padding: var(--espaciado-mediano);
-    border: 1px solid var(--color-texto-secundario);
-    border-radius: 0.5rem;
-}
-
-.tarjeta-ruta img {
+.img-flota {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    height: 180px;
+    object-fit: contain;
     display: block;
 }
 
-.tarjeta-ruta h4 {
-    margin-top: var(--espaciado-pequeno);
-    margin-bottom: var(--espaciado-pequeno);
-}
+/* ==================================================
+   6. GALERÍA DE RUTAS
+   ================================================== */
 
-.tarjeta-ruta p {
-    margin: 0.2rem 0;
+.img-galeria {
+    height: 180px;
+    object-fit: cover;
 }
 
 /* ==================================================
-   9. ENCUENTRANOS
+   7. ENCUENTRANOS
    ================================================== */
 
 .imagen-encuentranos {
@@ -209,7 +141,7 @@ main {
 }
 
 /* ==================================================
-   10. TABLAS
+   8. TABLAS
    ================================================== */
 
 table {
@@ -232,16 +164,8 @@ th {
 }
 
 /* ==================================================
-   11. FORMULARIO DE RESERVAS
+   9. FORMULARIO DE RESERVAS
    ================================================== */
-
-/* Ancho de los campos */
-
-#formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
-#formulario-reserva select,
-#formulario-reserva textarea {
-    width: 100%;
-}
 
 /* Foco personalizado para formularios */
 #formulario-reserva .form-control:focus,
@@ -252,7 +176,7 @@ th {
 }
 
 /* ==================================================
-   12. BOTÓN FLOTANTE DE WHATSAPP
+   10. BOTÓN FLOTANTE DE WHATSAPP
    ================================================== */
 
 .boton-whatsapp {
@@ -280,13 +204,8 @@ th {
 
 
 /* ==================================================
-   13. PIE DE PÁGINA
+   11. PIE DE PÁGINA
    ================================================== */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 footer {
     background-color: var(--color-texto-secundario);
@@ -308,9 +227,7 @@ footer p {
         font-size: 0.75rem;
         line-height: 1.3;
     }
-}
 
-@media (max-width: 480px) {
     .boton-whatsapp {
         font-size: 0.75rem;
         padding: 0.4rem 0.6rem;
