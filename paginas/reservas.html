@@ -19,20 +19,44 @@
 
     <!-- Encabezado con menu navegación -->
 
-    <header class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-3">
-        <h1 class="mb-0"><strong>RUEDA LIBRE</strong></h1>
-        <nav>
-            <ul id="menu" class="d-flex flex-wrap justify-content-center gap-2 mb-0">
-                <li><a href="../index.html"> Inicio</a></li>
-                <li><a href="tarifas.html"> Tarifas</a></li>
-                <li><a href="tarifas.html#tabla-recorridos"> Rutas</a></li>
-                <li><a href="reservas.html" class="activo"> Reservas</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-rueda" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">RUEDA LIBRE</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tarifas.html">Tarifas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tarifas.html#tabla-recorridos">Rutas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <div class="container">
-        <div class="row g-4 align-items-start">
+        <div class="row g-4 align-items-start mt-4">
             <main id="contenido" class="col-12 col-md-8">
 
                 <section id="reserva-bici">
@@ -42,103 +66,169 @@
                 <section id="formulario-reserva">
                     <form action="" method="post">
 
-                        <fieldset>
-                            <legend>
-                                <h3>Tus datos</h3>
+
+                        <fieldset class="border rounded-3 p-3 mb-4">
+                            <legend class="float-none w-auto px-2">
+                                <h3 class="h4 mb-0">Tus datos</h3>
                             </legend>
-                            <label for="nombre">Nombre completo</label> <br>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" minlength="3"
-                                required><br><br>
 
                             <div class="row g-3">
+
+                                <div class="col-12">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control"
+                                        placeholder="Tu nombre completo" minlength="3" required>
+                                </div>
+
                                 <div class="col-12 col-md-6">
-                                    <label for="tipo-documento">Tipo de documento</label> <br>
-                                    <select name="tipo-documento" id="tipo-documento" required>
+                                    <label for="tipo-documento" class="form-label">Tipo de documento</label>
+                                    <select name="tipo-documento" id="tipo-documento" class="form-select" required>
                                         <option value="">Selecciona una opción</option>
-                                        <option value="CC">Cedula de ciudadania</option>
-                                        <option value="CE">Cedula de extranjeria</option>
+                                        <option value="CC">Cédula de ciudadanía</option>
+                                        <option value="CE">Cédula de extranjería</option>
                                         <option value="TI">Tarjeta de identidad</option>
                                         <option value="PAS">Pasaporte</option>
                                     </select>
                                 </div>
+
                                 <div class="col-12 col-md-6">
-                                    <label for="documento">Número de documento</label> <br>
-                                    <input type="text" id="documento" name="documento" pattern="\d{6,10}"
-                                        inputmode="numeric" title="Minimo 6 - maximo 10 digitos"
-                                        placeholder="sin puntos ni espacios" required>
+                                    <label for="documento" class="form-label">Número de documento</label>
+                                    <input type="text" id="documento" name="documento" class="form-control"
+                                        pattern="\d{6,10}" inputmode="numeric" title="Mínimo 6 - máximo 10 dígitos"
+                                        placeholder="Sin puntos ni espacios" required>
                                 </div>
-                            </div><br>
 
-                            <label for="correo">Correo electronico</label> <br>
-                            <input type="email" id="correo" name="correo" placeholder="Tu correo electronico" required>
-                            <br><br>
+                                <div class="col-12">
+                                    <label for="correo" class="form-label">Correo electrónico</label>
+                                    <input type="email" id="correo" name="correo" class="form-control"
+                                        placeholder="Tu correo electrónico" required>
+                                </div>
 
-                            <label for="celular">Celular</label> <br>
-                            <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}"
-                                title="Valida el numero ingresado, debe tener 10 digitos"
-                                placeholder="Tu numero de celular" required> <br><br>
+                                <div class="col-12">
+                                    <label for="celular" class="form-label">Celular</label>
+                                    <input type="tel" id="celular" name="celular" class="form-control"
+                                        pattern="3[0-9]{9}" title="Debe tener 10 dígitos y comenzar por 3"
+                                        placeholder="Tu número de celular" required>
+                                </div>
+
+                            </div>
                         </fieldset>
 
-                        <fieldset>
-
-                            <legend>
-                                <h3>Tu alquiler</h3>
+                        <fieldset class="border rounded-3 p-3 mb-4">
+                            <legend class="float-none w-auto px-2">
+                                <h3 class="h4 mb-0">Tu alquiler</h3>
                             </legend>
-                            <label for="fecha">Fecha del alquiler</label> <br>
-                            <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
-                            <br><br>
 
-                            <label for="tipo-bicicleta">Tipo de bicicleta</label> <br><br>
+                            <div class="row g-3">
 
-                            <input type="radio" name="tipo-bicicleta" id="urbana" required>
-                            <label for="urbana">Bicicleta urbana</label>
+                                <div class="col-12">
+                                    <label for="fecha" class="form-label">Fecha del alquiler</label>
+                                    <input type="date" id="fecha" name="fecha" class="form-control" min="2026-11-01"
+                                        max="2026-12-31" required>
+                                </div>
 
-                            <input type="radio" name="tipo-bicicleta" id="montaña" required>
-                            <label for="montaña">Bicicleta de montaña</label>
+                                <div class="col-12">
+                                    <label class="form-label d-block">Tipo de bicicleta</label>
 
-                            <input type="radio" name="tipo-bicicleta" id="electrica" required>
-                            <label for="electrica">Bicicleta eléctrica</label> <br> <br>
+                                    <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+                                        <div class="form-check">
+                                            <input type="radio" name="tipo-bicicleta" id="urbana"
+                                                class="form-check-input" required>
+                                            <label for="urbana" class="form-check-label">Bicicleta urbana</label>
+                                        </div>
 
-                            <label for="Plan">Plan</label> <br><br>
+                                        <div class="form-check">
+                                            <input type="radio" name="tipo-bicicleta" id="montaña"
+                                                class="form-check-input" required>
+                                            <label for="montaña" class="form-check-label">Bicicleta de montaña</label>
+                                        </div>
 
-                            <input type="radio" name="plan" id="una-hora" required>
-                            <label for="una-hora">Una hora</label>
+                                        <div class="form-check">
+                                            <input type="radio" name="tipo-bicicleta" id="electrica"
+                                                class="form-check-input" required>
+                                            <label for="electrica" class="form-check-label">Bicicleta eléctrica</label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <input type="radio" name="plan" id="medio-dia" required>
-                            <label for="medio-dia">Medio día</label>
+                                <div class="col-12">
+                                    <label class="form-label d-block">Plan</label>
 
-                            <input type="radio" name="plan" id="dia-completo" required>
-                            <label for="dia-completo">Día completo</label> <br> <br>
+                                    <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+                                        <div class="form-check">
+                                            <input type="radio" name="plan" id="una-hora" class="form-check-input"
+                                                required>
+                                            <label for="una-hora" class="form-check-label">Una hora</label>
+                                        </div>
 
-                            <label for="cantidad">Cantidad de bicicletas</label> <br>
-                            <input type="number" id="cantidad" name="cantidad" min="1" max="6" required> <br><br>
+                                        <div class="form-check">
+                                            <input type="radio" name="plan" id="medio-dia" class="form-check-input"
+                                                required>
+                                            <label for="medio-dia" class="form-check-label">Medio día</label>
+                                        </div>
 
-                            <label for="recorrido">Recorrido guiado</label>
-                            <select name="recorrido" id="recorrido">
-                                <option value="">Selecciona un recorrido</option>
-                                <option value="ruta-1">Rios y parques</option>
-                                <option value="ruta-2">Sabores de barrio</option>
-                                <option value="ruta-3">Reto las palmas</option>
+                                        <div class="form-check">
+                                            <input type="radio" name="plan" id="dia-completo" class="form-check-input"
+                                                required>
+                                            <label for="dia-completo" class="form-check-label">Día completo</label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            </select>
+                                <div class="col-12 col-md-6">
+                                    <label for="cantidad" class="form-label">Cantidad de bicicletas</label>
+                                    <input type="number" id="cantidad" name="cantidad" class="form-control" min="1"
+                                        max="6" required>
+                                </div>
 
+                                <div class="col-12 col-md-6">
+                                    <label for="recorrido" class="form-label">Recorrido guiado</label>
+                                    <select name="recorrido" id="recorrido" class="form-select">
+                                        <option value="">Selecciona un recorrido</option>
+                                        <option value="ruta-1">Ríos y parques</option>
+                                        <option value="ruta-2">Sabores de barrio</option>
+                                        <option value="ruta-3">Reto Las Palmas</option>
+                                    </select>
+                                </div>
+
+                            </div>
                         </fieldset>
 
-                        <fieldset>
-                            <legend>
-                                <h3>Confirmación</h3>
+
+                        <fieldset class="border rounded-3 p-3 mb-4">
+                            <legend class="float-none w-auto px-2">
+                                <h3 class="h4 mb-0">Confirmación</h3>
                             </legend>
-                            <label for="comentarios">Comentarios</label> <br>
-                            <textarea name="comentarios" id="comentarios"
-                                placeholder="agrega información adicional que consideres necesaria"
-                                maxlength="300"></textarea><br><br>
 
-                            <input type="checkbox" id="politicas" name="politicas" required>
-                            <label for="politicas">Aceptacion de las politicas de alquiler</label> <br><br>
+                            <div class="row g-3">
 
-                            <button type="submit">Confirmar reserva</button>
+                                <div class="col-12">
+                                    <label for="comentarios" class="form-label">Comentarios</label>
+                                    <textarea name="comentarios" id="comentarios" class="form-control" rows="4"
+                                        placeholder="Agrega información adicional que consideres necesaria"
+                                        maxlength="300"></textarea>
+                                    <div class="form-text">Máximo 300 caracteres.</div>
+                                </div>
 
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="politicas" name="politicas" class="form-check-input"
+                                            required>
+                                        <label for="politicas" class="form-check-label">
+                                            Aceptación de las políticas de alquiler
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success">
+                                        Confirmar reserva
+                                    </button>
+                                </div>
+
+                            </div>
                         </fieldset>
+
                     </form>
                 </section>
             </main>

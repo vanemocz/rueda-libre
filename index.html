@@ -19,15 +19,48 @@
 
     <!-- Encabezado con menu navegación -->
 
-    <header class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-3">
-        <h1 class="mb-0"><strong>RUEDA LIBRE</strong></h1>
-        <nav>
-            <ul id="menu" class="d-flex flex-wrap justify-content-center gap-2 mb-0">
-                <li><a href="index.html" class="activo"> Inicio</a></li>
-                <li><a href="paginas/tarifas.html"> Tarifas</a></li>
-                <li><a href="paginas/tarifas.html#tabla-recorridos"> Rutas</a></li>
-                <li><a href="paginas/reservas.html"> Reservas</a></li>
-            </ul>
+    <!-- Encabezado y navegación -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-rueda" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    RUEDA LIBRE
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/tarifas.html">Tarifas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/tarifas.html#tabla-recorridos">Rutas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/reservas.html">Reservas</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
@@ -39,10 +72,10 @@
 
         <section id="portada">
             <div class="container">
-                <div class="row align-items-center g-3">
+                <div class="row align-items-center g-3 mt-2">
                     <div class="portada-contenido col-12 col-md-6">
 
-                        <p>Bienvenido a rueda libre <a href="#Encuentranos">Encuentranos</a></p>
+                        <p class="fs-4 fw-semibold">Bienvenido a rueda libre</p>
 
                         <p>Descubre una nueva forma de recorrer la ciudad y disfrutar de la naturaleza sobre dos ruedas.
                             <em><strong>En Rueda Libre queremos que cada recorrido se convierta en una experiencia para
@@ -50,6 +83,7 @@
                             libertad
                             de pedalear a tu propio ritmo.
                         </p>
+                        <a href="#Encuentranos" class="btn btn-outline-success btn-sm fw-semibold">Encuentranos</a>
                     </div>
 
                     <div class="portada-imagen col-12 col-md-6">
@@ -71,7 +105,7 @@
                     <p>Explora la ciudad o disfruta de un paseo al aire libre con nuestras bicicletas. <strong>Incluye casco
                             y candado</strong> para que tengas los elementos básicos durante tu recorrido. Elige el tipo de
                         bicicleta y el tiempo de alquiler que mejor se adapte a tus planes.</p>
-                    <a href="paginas/tarifas.html">Conoce nuestras tarifas</a>
+                    <a href="paginas/tarifas.html" class="btn btn-warning text-dark fw-semibold">Conoce nuestras tarifas</a>
                 </article>
 
                 <article id="compra">
@@ -97,9 +131,10 @@
                 <article>
                     <h3>Recorridos guiados</h3>
                     <p>Descubre nuevos lugares, comparte el camino con otros ciclistas y conoce diferentes rincones de la
-                        ciudad. <a href="paginas/tarifas.html#tabla-recorridos">Conoce nuestros recorridos</a> y elige la
+                        ciudad.  Elige la
                         ruta que mejor se adapte a tu experiencia y condición física.</p>
                     <img src="img/recorrido-guiado.jpg" alt="imagen recorrido guiado" class="img-fluid imagen-recorridos">
+                    <a href="paginas/tarifas.html#tabla-recorridos" class="btn btn-warning text-dark fw-semibold">Conoce nuestros recorridos</a>
                 </article>
 
             </div>
@@ -127,7 +162,7 @@
                             <p class="lead">Cómoda y liviana para las ciclorrutas.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$10.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -140,7 +175,7 @@
                             <p class="lead">Se dobla en segundos; ideal para combinar con el metro.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$12.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -153,7 +188,7 @@
                             <p class="lead">Suspensión delantera y 21 cambios para las subidas.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$15.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -166,7 +201,7 @@
                             <p class="lead">Para rutas mixtas de asfalto y destapado.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$18.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -174,14 +209,14 @@
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <article
                             class="tarjeta-bicicleta p-3 h-100 d-flex flex-column gap-2">
-                            <span class="etiqueta-nuevo">Nuevo</span>
+                            <span class="etiqueta-nuevo text-dark">Nuevo</span>
                             <img class="img-fluid" src="img/bicicleta electrica.jpeg"
                                 alt="bicicleta electrica urbana">
                             <h4>Eléctrica Urbana</h4>
                             <p class="lead">Asistencia eléctrica con 45 km de autonomía.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$25.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -194,7 +229,7 @@
                             <p class="lead">Para niños de 6 a 10 años.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$8.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -207,7 +242,7 @@
                             <p class="lead">Para dos personas, ideal para compartir la experiencia de pedalear.</p>
                             <p class="fw-bold fs-5 mb-0 mt-auto">$20.000</p>
                             <a href="paginas/reservas.html"
-                                class="boton-reserva fw-semibold fs-5 d-inline-block">Reserva
+                                class="btn btn-success fw-semibold fs-5">Reserva
                                 ahora</a>
                         </article>
                     </div>
@@ -304,13 +339,15 @@
             </div>
         </section>
         
+        <!-- Listo para pedalear -->
+
         <section class="listo">
             <div class="container">
                 <div class="d-flex flex-column align-items-center justify-content-between flex-md-row p-3 bg-secondary-subtle mt-4 rounded">
                     <p class="fs-3 mb-0">¿Listo para pedalear?</p>
                     <img src="img/como-llegar.jpg" alt="Ciclista reservando"
                         class="img-fluid p-2 d-none d-md-block w-50 rounded-4">
-                    <a href="paginas/reservas.html" class="text-success fw-semibold fs-3 p-2">Reserva
+                    <a href="paginas/reservas.html" class="btn btn-success fw-semibold fs-5 mt-2 mt-md-0">Reserva
                         ahora</a>
                 </div>
             </div>
@@ -338,7 +375,7 @@
                     alquiler de bicicletas, la venta de bicicletas e implementos, el servicio de taller y los recorridos
                     guiados. Trabajamos para ofrecerte opciones que se adapten a tus planes y te animen a vivir nuevas
                     experiencias sobre dos ruedas.</p>
-                <p>Contactanos<a href="mailto:hola@ruedalibre.example"> Correo Electronico</a></p>
+                <p>Contactanos<a href="mailto:hola@ruedalibre.example" class="btn btn-outline-success btn-sm fw-semibold ms-2"> Correo Electronico</a></p>
             </div>
             
         </section>

@@ -54,34 +54,29 @@ header {
     text-align: center;
 }
 
-#menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+/* Navbar Rueda Libre */
+
+.navbar-rueda {
+    background-color: var(--color-titulos);
+    padding: 1rem;
 }
 
-#menu li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+.navbar-rueda .navbar-brand,
+.navbar-rueda .nav-link {
+    color: var(--color-fondo);
 }
 
-#menu a {
-    color: var(--color-texto-secundario);
+.navbar-rueda .nav-link.active {
+    color: var(--color-boton-secundario);
+    font-weight: 700;
 }
 
-#menu a.activo {
-    color: var(--color-boton-principal);
-    font-weight: 600;
+.navbar-rueda .nav-link:hover {
+    color: var(--color-boton-secundario);
 }
 
-#menu a:hover {
-    color: var(--color-boton-principal);
-}
-
-#menu a:focus {
-    color: var(--color-boton-principal);
-    outline: 2px solid var(--color-titulos);
+.navbar-rueda .nav-link:focus {
+    outline: 2px solid var(--color-boton-secundario);
     outline-offset: 3px;
 }
 
@@ -101,27 +96,6 @@ a:hover {
 }
 
 a:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
-}
-
-/* Botón de reserva */
-
-.boton-reserva {
-    display: inline-block;
-    background-color: var(--color-boton-principal);
-    color: var(--color-fondo);
-    padding: var(--espaciado-pequeno) var(--espaciado-mediano);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-.boton-reserva:hover {
-    background-color: var(--color-titulos);
-}
-
-.boton-reserva:focus {
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
 }
@@ -170,11 +144,6 @@ main {
     border-radius: 0.5rem;
     position: relative;
     background-color: white;
-}
-
-.tarjeta-bicicleta .boton-reserva {
-    margin-top: auto;
-    align-self: flex-start;
 }
 
 .tarjeta-bicicleta img {
@@ -274,39 +243,12 @@ th {
     width: 100%;
 }
 
-/* Organización de los grupos */
-
-#formulario-reserva fieldset {
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Botón de envío */
-
-#formulario-reserva button[type="submit"] {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-boton-principal);
-    color: var(--color-fondo);
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-#formulario-reserva button:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
-}
-
-#formulario-reserva button:hover {
-    background-color: var(--color-titulos);
-}
-
-/* Indicadores de enfoque */
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 2px solid var(--color-titulos);
-    outline-offset: 3px;
+/* Foco personalizado para formularios */
+#formulario-reserva .form-control:focus,
+#formulario-reserva .form-select:focus,
+#formulario-reserva .form-check-input:focus {
+    border-color: var(--color-boton-principal);
+    box-shadow: 0 0 0 0.25rem rgba(30, 122, 79, 0.25);
 }
 
 /* ==================================================
