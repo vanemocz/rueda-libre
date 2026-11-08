@@ -20,7 +20,22 @@
     --espaciado-pequeno: 0.5rem;
     --espaciado-mediano: 1rem;
     --espaciado-grande: 2rem;
+
+    /* Personalización de variables Bootstrap */
+    --bs-primary: #1E7A4F;
+    --bs-primary-rgb: 30, 122, 79;
+
+    --bs-body-font-family: "Open Sans", sans-serif;
+
+    --bs-link-color: #1E7A4F;
+    --bs-link-hover-color: #14213D;
+
+    --bs-border-radius: 0.5rem;
+
+    /* Botón principal - Verde Ruta */
+    --bs-btn-bg: #1E7A4F;
 }
+
 
 /* ==================================================
    2. CONFIGURACIÓN GENERAL Y ESTILOS BASE
@@ -33,6 +48,36 @@ body {
     background-color: var(--color-fondo);
 }
 
+/* Botón principal - Verde Ruta */
+.btn-success {
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: #1E7A4F;
+    --bs-btn-border-color: #1E7A4F;
+
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #17613E;
+    --bs-btn-hover-border-color: #17613E;
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #124D32;
+    --bs-btn-active-border-color: #124D32;
+}
+
+/* Botón secundario - Naranja Pedal */
+.btn-warning {
+    --bs-btn-color: #14213D;
+    --bs-btn-bg: #F39A2B;
+    --bs-btn-border-color: #F39A2B;
+
+    --bs-btn-hover-color: #14213D;
+    --bs-btn-hover-bg: #E58A1B;
+    --bs-btn-hover-border-color: #E58A1B;
+
+    --bs-btn-active-color: #14213D;
+    --bs-btn-active-bg: #D97B12;
+    --bs-btn-active-border-color: #D97B12;
+}
+
 h1,
 h2,
 h3,
@@ -42,6 +87,7 @@ h6 {
     font-family: var(--fuente-titulos);
     font-weight: 700;
 }
+
 
 /* ==================================================
    3. ENCABEZADO Y NAVEGACIÓN
@@ -119,12 +165,38 @@ h6 {
 }
 
 /* ==================================================
-   6. GALERÍA DE RUTAS
+   6. GALERÍA DE RUTAS Y BENEFICIOS
    ================================================== */
 
 .img-galeria {
     height: 180px;
     object-fit: cover;
+}
+
+/* Etiqueta de icono en beneficios */
+.icono-beneficio {
+    margin-left: 45%;
+    display: block;
+    font-size: 2rem;
+    color: var(--color-boton-principal);
+    margin-bottom: 0.75rem;
+}
+
+/* Etiqueta de icono en encuentranos */
+.icono-encuentranos {
+    display: block;
+    font-size: 2rem;
+    color: var(--color-boton-principal);
+    margin-bottom: 0.75rem;
+}
+
+/* Etiqueta de icono en Navbar */
+.icono-beneficio {
+    margin-left: 45%;
+    display: block;
+    font-size: 2rem;
+    color: var(--color-boton-principal);
+    margin-bottom: 0.75rem;
 }
 
 /* ==================================================
