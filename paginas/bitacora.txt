@@ -345,10 +345,40 @@ SEMANA 2
     text-bg-light pone fondo claro con texto legible.
     lead para texto destacado
 
-# mini reto 7: Conflictos identificados y soluciones:
+# Mini reto 7: Conflictos identificados y soluciones:
 
     Distribución de elementos: existían reglas Flexbox y Grid propias que se superponían con Bootstrap. Se retiraron las reglas de distribución reemplazadas por las clases de Bootstrap.
 
     Espaciados y márgenes: algunas tarjetas presentaban diferencias de alineación. Se utilizaron utilidades como gap-2, mt-auto y h-100 para organizar su contenido.
 
     Estilos tipográficos y colores: se revisaron las declaraciones heredadas y los estilos aplicados mediante DevTools para identificar posibles conflictos y conservar la apariencia visual definida para el proyecto.
+
+# Mini reto 8 - Comparativa de versiones
+
+    **1. Cantidad de líneas de CSS**
+
+    - Versión 1.5 (CSS propio): 494 líneas.
+    - Versión actual (Bootstrap): 375 líneas.
+    - Reducción: 119 líneas (aproximadamente 24,1 %).
+
+    **2. Tiempo invertido (estimado)**
+
+    - Versión 1.5: 6 horas.
+    - Versión actual: 5 horas.
+
+    **3. Ventajas observadas**
+
+    - Bootstrap facilita la distribución responsive mediante Grid y Flexbox.
+    - Se reduce la cantidad de código CSS personalizado.
+    - Permite organizar los elementos de manera más sencilla en diferentes tamaños de pantalla.
+    - Se conserva la identidad visual mediante estilos propios.
+
+    **4. Desventajas observadas**
+
+    - Es necesario familiarizarse con las clases y la estructura de Bootstrap.
+    - Algunas personalizaciones requieren mantener reglas CSS propias.
+    - La combinación de Bootstrap con CSS personalizado exige comprender la cascada y la prioridad de los estilos.
+
+    **5. Conclusión**
+
+    La migración a Bootstrap permitió reducir aproximadamente un 24,1 % del CSS y simplificar la organización responsive del sitio. Durante el proceso reforcé mis conocimientos sobre Grid, Flexbox, clases de utilidad y diseño adaptable. Aunque la adaptación requirió tiempo de aprendizaje y pruebas, considero que Bootstrap facilita el mantenimiento y la organización del proyecto, sin perder la identidad visual de Rueda Libre.

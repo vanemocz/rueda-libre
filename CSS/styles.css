@@ -22,7 +22,6 @@
     --espaciado-grande: 2rem;
 }
 
-
 /* ==================================================
    2. CONFIGURACIÓN GENERAL Y ESTILOS BASE
    ================================================== */
@@ -47,41 +46,13 @@ h6 {
     font-weight: 700;
 }
 
-
 /* ==================================================
    3. ENCABEZADO Y NAVEGACIÓN
    ================================================== */
 
-/* Dejo de utilizar algunas propiedades de la sección de header, ya que no se está usando en el diseño actual. se reemplaza por bootstrap 
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--espaciado-mediano);
-    padding: var(--espaciado-mediano);
-}
-*/
-
 header {
     text-align: center;
 }
-
-/* Dejo de utilizar algunas propiedades de la sección de menu y menu li, ya que no se está usando en el diseño actual. se reemplaza por bootstrap 
-
-#menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--espaciado-pequeno);
-}
-
-#menu li {
-    display: flex;
-}
-*/
 
 #menu {
     padding: 0;
@@ -113,7 +84,6 @@ header {
     outline: 2px solid var(--color-titulos);
     outline-offset: 3px;
 }
-
 
 /* ==================================================
    4. ENLACES Y BOTONES
@@ -156,7 +126,6 @@ a:focus {
     outline-offset: 3px;
 }
 
-
 /* ==================================================
    5. CONTENEDORES PRINCIPALES
    ================================================== */
@@ -167,30 +136,8 @@ main {
     margin: 0 auto;
 }
 
-
 /* ==================================================
-   6. PORTADA
-   ================================================== */
-
-/* Dejo de utilizar la sección de portada, ya que no se está usando en el diseño actual. La sección de portada se reemplaza por bootstrap
-
-#portada {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espaciado-mediano);
-    align-items: center;
-}
-
-.portada-imagen img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}*/
-
-
-/* ==================================================
-   7. NUESTROS SERVICIOS
+   6. NUESTROS SERVICIOS
    ================================================== */
 
 #nuestros-servicios article {
@@ -210,21 +157,12 @@ main {
 }
 
 /* ==================================================
-   8. NUESTRA FLOTA DE BICICLETAS
+   7. NUESTRA FLOTA DE BICICLETAS
    ================================================== */
 
 #nuestra-flota {
     padding: var(--espaciado-grande) 0;
 }
-
-/* se deja de utilizar la sección de tarjetas de bicicletas, ya que no se está usando en el diseño actual. La sección de tarjetas de bicicletas se reemplaza por bootstrap
-.tarjetas-bicicletas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: var(--espaciado-mediano);
-    display: flex;
-    flex-direction: column;
-}*/
 
 .tarjeta-bicicleta {
     padding: 1rem;
@@ -260,18 +198,9 @@ main {
     font-weight: 700;
 }
 
-
 /* ==================================================
-   9. GALERÍA DE RUTAS
+   8. GALERÍA DE RUTAS
    ================================================== */
-
-/* Dejo de utilizar la sección de galería de rutas, ya que no se está usando en el diseño actual. La sección de galería de rutas se reemplaza por bootstrap
-.galeria-rutas {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--espaciado-mediano);
-}
-*/
 
 .tarjeta-ruta {
     min-width: 0;
@@ -298,7 +227,7 @@ main {
 }
 
 /* ==================================================
-   10. ENCUENTRANOS
+   9. ENCUENTRANOS
    ================================================== */
 
 .imagen-encuentranos {
@@ -310,9 +239,8 @@ main {
     border-radius: 10px;
 }
 
-
 /* ==================================================
-   11. TABLAS
+   10. TABLAS
    ================================================== */
 
 table {
@@ -334,9 +262,8 @@ th {
     color: var(--color-fondo);
 }
 
-
 /* ==================================================
-   12. FORMULARIO DE RESERVAS
+   11. FORMULARIO DE RESERVAS
    ================================================== */
 
 /* Ancho de los campos */
@@ -382,32 +309,8 @@ select:focus {
     outline-offset: 3px;
 }
 
-
 /* ==================================================
-   13. DISTRIBUCIÓN DE LA PÁGINA DE RESERVAS
-   ================================================== */
-
-.layout-reservas {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--espaciado-grande);
-    align-items: start;
-}
-
-/* Campos de documento */
-
-.datos-documento {
-    display: flex;
-    gap: var(--espaciado-mediano);
-}
-
-.datos-documento div {
-    flex: 1;
-}
-
-
-/* ==================================================
-   14. BOTÓN FLOTANTE DE WHATSAPP
+   12. BOTÓN FLOTANTE DE WHATSAPP
    ================================================== */
 
 .boton-whatsapp {
@@ -435,7 +338,7 @@ select:focus {
 
 
 /* ==================================================
-   15. PIE DE PÁGINA
+   13. PIE DE PÁGINA
    ================================================== */
 
 img {
@@ -443,15 +346,6 @@ img {
     height: auto;
 }
 
-/* Dejo de utilizar algunas propiedades de la sección de footer, ya que no se está usando en el diseño actual. se reemplaza por bootstrap
-
-footer {
-    background-color: var(--color-texto-secundario);
-    color: var(--color-fondo);
-    border-radius: 15px;
-}
-    
-*/
 footer {
     background-color: var(--color-texto-secundario);
     color: var(--color-fondo);
@@ -465,79 +359,6 @@ footer p {
 
  /* TABLET: desde 768 px */
 
-/* Dejo de utilizar la sección de header y menu, ya que no se está usando en el diseño actual. La sección se reemplaza por bootstrap
-@media (min-width: 768px) {
-
-
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-
-    #menu {
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-    }
-
-    #menu li a {
-        padding: 0.5rem;
-    }
-
-}
-*/
-
-/* ESCRITORIO: desde 1200 px */
-
-/* Dejo de utilizar la sección de portada, ya que no se está usando en el diseño actual. La sección de portada se reemplaza por bootstrap
-@media (min-width: 1200px) {
-
-    #portada {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}*/
-
-/* TABLET: desde 768 px */
-
-/* Dejo de utilizar la sección de galería de rutas, ya que no se está usando en el diseño actual. La sección de galería de rutas se reemplaza por bootstrap
-@media (min-width: 768px) {
-
-    .galeria-rutas {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-}
-*/
-
-@media (min-width: 678px) {
-    .layout-reservas {
-        grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
-    }
-}
-
-/* ESCRITORIO: desde 1200 px */
-
-/* Dejo de utilizar la sección de galería de rutas, ya que no se está usando en el diseño actual. La sección de galería de rutas se reemplaza por bootstrap
-@media (min-width: 1200px) {
-
-    .galeria-rutas {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-}*/
-
-/* Dejo de utilizar la sección de footer, ya que no se está usando en el diseño actual. La sección se reemplaza por bootstrap
-@media (min-width: 768px) {
-    footer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: var(--espaciado-grande);
-    }
-}
-*/
 @media (max-width: 480px) {
     table th,
     table td {

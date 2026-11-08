@@ -7,124 +7,155 @@
     <title>Tarifas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1><strong>RUEDA LIBRE</strong></h1>
+    <!-- Encabezado con menu navegación -->
+
+    <header class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-3">
+        <h1 class="mb-0"><strong>RUEDA LIBRE</strong></h1>
         <nav>
-            <menu id="menu">
+            <ul id="menu" class="d-flex flex-wrap justify-content-center gap-2 mb-0">
                 <li><a href="../index.html"> Inicio</a></li>
                 <li><a href="tarifas.html" class="activo"> Tarifas</a></li>
                 <li><a href="tarifas.html#tabla-recorridos"> Rutas</a></li>
                 <li><a href="reservas.html"> Reservas</a></li>
-            </menu>
+            </ul>
         </nav>
     </header>
 
-    <main id="contenido">
+    <div class="container">
+        <div class="row g-3">
+            <main id="contenido" class="col-12 col-lg-9 order-1">
 
-        <section id="tarifas">
-            <h2>TARIFAS Y RECORRIDOS</h2>
-            <table id="tabla-tarifas">
-                <caption> Tarifas de alquiler de bicicletas</caption>
-                <thead>
-                    <tr>
-                        <th scope="col"> Tipo bicicleta</th>
-                        <th scope="col"> 1 hora</th>
-                        <th scope="col"> Medio día (4h)</th>
-                        <th scope="col"> Dia Completo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr scope="row">
-                        <td>Urbana</td>
-                        <td>$10.000</td>
-                        <td>$30.000</td>
-                        <td>$50.000</td>
-                    </tr>
-                    <tr scope="row">
-                        <td>Montaña</td>
-                        <td>$15.000</td>
-                        <td>$45.000</td>
-                        <td>$70.000</td>
-                    </tr>
-                    <tr scope="row">
-                        <td>electrica</td>
-                        <td>$25.000</td>
-                        <td>$70.000</td>
-                        <td>$110.000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <section id="tarifas">
+                    <div class="tabla-tarifa">
+                        <h2>TARIFAS</h2>
+                        <table id="tabla-tarifas">
+                            <caption> Tarifas de alquiler de bicicletas</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col"> Tipo bicicleta</th>
+                                    <th scope="col"> 1 hora</th>
+                                    <th scope="col"> Medio día (4h)</th>
+                                    <th scope="col"> Dia Completo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urbana</td>
+                                    <td>$10.000</td>
+                                    <td>$30.000</td>
+                                    <td>$50.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Montaña</td>
+                                    <td>$15.000</td>
+                                    <td>$45.000</td>
+                                    <td>$70.000</td>
+                                </tr>
+                                <tr>
+                                    <td>electrica</td>
+                                    <td>$25.000</td>
+                                    <td>$70.000</td>
+                                    <td>$110.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-        <section id="recorridos">
-            <table id="tabla-recorridos">
-                <caption> Recorridos</caption>
-                <thead>
-                    <tr>
-                        <th scope="col"> Recorrido</th>
-                        <th scope="col"> Distancia</th>
-                        <th scope="col"> Duracion</th>
-                        <th scope="col"> Nivel</th>
-                        <th scope="col"> Tarifa por persona</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr scope="row">
-                        <td>Rio y parques</td>
-                        <td>12 km</td>
-                        <td>2 horas</td>
-                        <td>Facil</td>
-                        <td>$45.000</td>
-                    </tr>
-                    <tr scope="row">
-                        <td>Sabores de barrio</td>
-                        <td>18 km</td>
-                        <td>3 horas</td>
-                        <td>Medio</td>
-                        <td>$60.000</td>
-                    </tr>
-                    <tr scope="row">
-                        <td>Reto las palmas</td>
-                        <td>25 km</td>
-                        <td>4 horas</td>
-                        <td>Dificil</td>
-                        <td>$85.000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> <br>
+                </section>
 
-        <section id="indicaciones">
-            <a href="reservas.html" class="boton-reserva"> Reserva ahora </a>
-            <p>Todas las tarifas <strong>incluyen casco y candado.</strong> Los recorridos salen sábados y domingos a las 7:00 a. m.</p>
-            <a href="../index.html">Inicio</a>
-        </section>
+                <section id="recorridos">
+                    <div class="tabla-recorrido">
+                        <h2>RECORRIDOS</h2>
+                        <table id="tabla-recorridos">
+                            <caption> Recorridos en bicicleta</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col"> Recorrido</th>
+                                    <th scope="col"> Distancia</th>
+                                    <th scope="col"> Duracion</th>
+                                    <th scope="col"> Nivel</th>
+                                    <th scope="col"> Tarifa por persona</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rio y parques</td>
+                                    <td>12 km</td>
+                                    <td>2 horas</td>
+                                    <td>Facil</td>
+                                    <td>$45.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sabores de barrio</td>
+                                    <td>18 km</td>
+                                    <td>3 horas</td>
+                                    <td>Medio</td>
+                                    <td>$60.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Reto las palmas</td>
+                                    <td>25 km</td>
+                                    <td>4 horas</td>
+                                    <td>Dificil</td>
+                                    <td>$85.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
 
-        <aside>
-            <h2><strong>Qué llevar</strong></h2>
-            <ul>
-                <li>Ropa comoda</li>
-                <li>Agua</li>
-                <li>Protector solar</li>
-                <li>Documento de identidad</li>
-            </ul>
-        </aside>
+                <section id="indicaciones">
+                    <div class="mt-3 mb-3">
+                        <a href="reservas.html" class="boton-reserva"> Reserva ahora </a>
+                        <p class="mt-3">Todas las tarifas <strong>incluyen casco y candado.</strong> Los recorridos salen sábados y
+                            domingos
+                            a
+                            las 7:00 a. m.</p>
+                        <a href="../index.html">Inicio</a>
+                    </div>
+                </section>
 
-    </main>
+            </main>
 
-    <footer>
+            <aside class="col-12 col-lg-3 order-2 order-lg-0 align-self-lg-center">
+                <h2><strong>Qué llevar</strong></h2>
+                <ul>
+                    <li>Ropa comoda</li>
+                    <li>Agua</li>
+                    <li>Protector solar</li>
+                    <li>Documento de identidad</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+
+    <!-- Pie de pagina -->
+
+    <footer class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3 text-center">
         <p><strong> &copy; Rueda libre</strong></p>
         <p>hola@ruedalibre.example</p>
         <p>2026</p>
     </footer>
 
-    <a href="https://wa.me/573000000000" class="boton-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">WhatsApp</a>
+    <!-- Enlace Whatsapp -->
+
+    <a href="https://wa.me/573000000000" class="boton-whatsapp" target="_blank" rel="noopener noreferrer"
+        aria-label="Contáctanos por WhatsApp">WhatsApp</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
