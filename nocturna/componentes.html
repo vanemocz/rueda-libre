@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,32 +9,38 @@
     <title>Kit de componentes - Rueda Nocturna</title>
 </head>
 
-<body>
-    <main>
+<body class="bg-crema dark:bg-azul-noche text-azul-noche dark:text-crema font-texto">
 
-        <header class="bg-slate-950 text-white p-8 rounded-xl mb-8">
-            <h1 class="text-3xl font-bold">
+    <main class="max-w-7xl mx-auto p-6 md:p-8">
+
+        <!-- Encabezado -->
+        <header class="bg-azul-noche text-white p-8 rounded-xl mb-8">
+            <h1 class="text-3xl font-bold font-titulos">
                 Kit de componentes Rueda Nocturna
             </h1>
-            <p class="text-slate-300 mt-2">
+            <p class="text-crema mt-2">
                 Biblioteca visual de componentes de Rueda Libre.
             </p>
         </header>
 
+        <!-- Botones -->
         <section class="flex flex-wrap justify-center gap-6 p-8">
 
+            <!-- Principal -->
             <button
-                class="bg-emerald-500 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500">
+                class="bg-verde-ruta text-white px-6 py-3 rounded-lg font-semibold hover:bg-azul-noche transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-verde-ruta">
                 Principal
             </button>
 
+            <!-- Secundario -->
             <button
-                class="bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">
+                class="bg-naranja-pedal text-azul-noche px-6 py-3 rounded-lg font-semibold hover:bg-amarillo-faro transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-naranja-pedal">
                 Secundario
             </button>
 
+            <!-- Contorno -->
             <button
-                class="border-2 border-emerald-400 text-emerald-500 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-400 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500">
+                class="border-2 border-verde-ruta dark:border-crema text-verde-ruta dark:text-crema px-6 py-3 rounded-lg font-semibold hover:bg-verde-ruta hover:text-white dark:hover:bg-crema dark:hover:text-azul-noche transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-verde-ruta">
                 Contorno
             </button>
 
@@ -41,53 +48,65 @@
 
         <!-- Card de ruta -->
         <section class="p-8">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">
+
+            <h2 class="text-2xl font-bold font-titulos text-azul-noche dark:text-crema mb-6">
                 Ejemplo de tarjeta
             </h2>
 
             <div
-                class="w-full max-w-sm border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:border-emerald-400 transition-shadow duration-300">
+                class="w-full max-w-sm bg-white dark:bg-azul-noche border border-gris-asfalto dark:border-gris-asfalto rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:border-verde-ruta transition-all duration-300">
 
-                <div class="h-48 bg-slate-200">
-                    <img src="../img/nocturna/ruta-centro.jpeg" alt="Ruta nocturna por el centro de Medellín"
+                <div class="h-48 bg-gris-asfalto">
+                    <img src="../img/nocturna/ruta-centro.jpeg"
+                        alt="Ruta nocturna por el centro de Medellín"
                         class="w-full h-full object-cover">
                 </div>
 
-                <div class="p-6">
+                <div class="p-6 text-azul-noche dark:text-crema">
 
-                    <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">
+                    <span class="bg-verde-ruta text-white text-sm font-semibold px-3 py-1 rounded-full">
                         Fácil
                     </span>
 
-                    <h3 class="text-2xl font-bold text-slate-900 mt-4">
+                    <h3 class="text-2xl font-bold font-titulos mt-4">
                         Luces del Centro
                     </h3>
 
                     <div class="mt-4 space-y-3">
                         <div>
-                            <p class="text-sm text-gray-500">Distancia</p>
+                            <p class="text-sm text-gris-asfalto dark:text-crema">
+                                Distancia
+                            </p>
                             <p class="text-lg font-semibold">10 km</p>
                         </div>
 
                         <div>
-                            <p class="text-sm text-gray-500">Duración</p>
+                            <p class="text-sm text-gris-asfalto dark:text-crema">
+                                Duración
+                            </p>
                             <p class="text-lg font-semibold">2 horas</p>
                         </div>
 
                         <div>
-                            <p class="text-sm text-gray-500">Punto de encuentro</p>
+                            <p class="text-sm text-gris-asfalto dark:text-crema">
+                                Punto de encuentro
+                            </p>
                             <p class="text-lg font-semibold">Sede Rueda Libre</p>
                         </div>
                     </div>
 
                     <div class="mt-6">
-                        <p class="text-sm text-gray-500">Precio por persona</p>
-                        <p class="text-2xl font-bold text-emerald-600">$55.000</p>
+                        <p class="text-sm text-gris-asfalto dark:text-crema">
+                            Precio por persona
+                        </p>
+                        <p class="text-2xl font-bold text-verde-ruta dark:text-crema">
+                            $55.000
+                        </p>
                     </div>
 
                     <div class="mt-6">
                         <button
-                            class="w-full bg-emerald-500 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-400">
+                            class="w-full bg-verde-ruta text-white px-6 py-3 rounded-lg font-semibold hover:bg-azul-noche transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-verde-ruta">
                             Reservar ruta
                         </button>
                     </div>
@@ -100,25 +119,31 @@
         <section class="p-8 space-y-4">
 
             <!-- Información -->
-            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
-                <h3 class="font-bold text-blue-800">Información</h3>
-                <p class="text-blue-700 text-sm">
+            <div class="bg-crema dark:bg-azul-noche border-l-4 border-azul-noche dark:border-crema p-4 rounded-lg">
+                <h3 class="font-bold text-azul-noche dark:text-crema">
+                    Información
+                </h3>
+                <p class="text-azul-noche dark:text-crema text-sm">
                     Recuerda llegar 15 minutos antes de iniciar tu recorrido.
                 </p>
             </div>
 
             <!-- Éxito -->
-            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-lg">
-                <h3 class="font-bold text-green-800">¡Reserva confirmada!</h3>
-                <p class="text-green-700 text-sm">
+            <div class="bg-crema dark:bg-azul-noche border-l-4 border-verde-ruta p-4 rounded-lg">
+                <h3 class="font-bold text-verde-ruta dark:text-crema">
+                    ¡Reserva confirmada!
+                </h3>
+                <p class="text-azul-noche dark:text-crema text-sm">
                     Tu cupo para la ruta nocturna ha sido reservado exitosamente.
                 </p>
             </div>
 
             <!-- Advertencia -->
-            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-lg">
-                <h3 class="font-bold text-amber-800">Advertencia</h3>
-                <p class="text-amber-700 text-sm">
+            <div class="bg-amarillo-faro dark:bg-azul-noche border-l-4 border-naranja-pedal dark:border-amarillo-faro p-4 rounded-lg">
+                <h3 class="font-bold text-azul-noche dark:text-crema">
+                    Advertencia
+                </h3>
+                <p class="text-azul-noche dark:text-crema text-sm">
                     Recuerda utilizar casco y luces durante todo el recorrido.
                 </p>
             </div>
@@ -128,41 +153,53 @@
         <!-- Campos de formulario -->
         <section class="p-8 space-y-6">
 
-            <h2 class="text-2xl font-bold text-slate-900">
+            <h2 class="text-2xl font-bold font-titulos text-azul-noche dark:text-crema">
                 Formulario de contacto
             </h2>
 
             <!-- Correo -->
             <div class="space-y-2">
-                <label for="correo" class="block text-sm font-semibold text-slate-700">
+
+                <label for="correo"
+                    class="block text-sm font-semibold text-azul-noche dark:text-crema">
                     Correo electrónico
                 </label>
 
-                <input type="email" id="correo" placeholder="ejemplo@correo.com"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="ejemplo@correo.com"
+                    class="w-full bg-white dark:bg-azul-noche text-azul-noche dark:text-crema placeholder:text-gris-asfalto dark:placeholder:text-crema border border-gris-asfalto dark:border-gris-asfalto rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-verde-ruta focus:border-verde-ruta">
 
-                <p class="text-sm text-slate-500">
+                <p class="text-sm text-gris-asfalto dark:text-crema">
                     Ingresa un correo válido para recibir información.
                 </p>
+
             </div>
 
             <!-- Celular -->
             <div class="space-y-2">
-                <label for="celular" class="block text-sm font-semibold text-slate-700">
+
+                <label for="celular"
+                    class="block text-sm font-semibold text-azul-noche dark:text-crema">
                     Número de celular
                 </label>
 
-                <input type="tel" id="celular" placeholder="3001234567"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                <input
+                    type="tel"
+                    id="celular"
+                    placeholder="3001234567"
+                    class="w-full bg-white dark:bg-azul-noche text-azul-noche dark:text-crema placeholder:text-gris-asfalto dark:placeholder:text-crema border border-gris-asfalto dark:border-gris-asfalto rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-verde-ruta focus:border-verde-ruta">
 
-                <p class="text-sm text-slate-500">
+                <p class="text-sm text-gris-asfalto dark:text-crema">
                     Ingresa tu número de contacto.
                 </p>
+
             </div>
 
         </section>
 
     </main>
-</body>
 
+</body>
 </html>
