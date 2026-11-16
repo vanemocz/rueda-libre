@@ -382,3 +382,9 @@ SEMANA 2
     **5. Conclusión**
 
     La migración a Bootstrap permitió reducir aproximadamente un 24,1 % del CSS y simplificar la organización responsive del sitio. Durante el proceso reforcé mis conocimientos sobre Grid, Flexbox, clases de utilidad y diseño adaptable. Aunque la adaptación requirió tiempo de aprendizaje y pruebas, considero que Bootstrap facilita el mantenimiento y la organización del proyecto, sin perder la identidad visual de Rueda Libre.
+
+RUEDA NOCTURNA
+
+1. Bootstrap: utilice clases predefinidas de componentes, como btn y btn-primary.
+2. Tailwind: construi el botón combinando utilidades como bg-emerald-500, px-8, py-3 y rounded-full.
+3. Diferencia clave: Bootstrap ofrece componentes prediseñados; Tailwind permite construir diseños combinando clases de utilidad.
