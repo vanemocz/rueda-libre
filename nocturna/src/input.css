@@ -1,4 +1,3 @@
-
 /* Importar tipografías de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
 
@@ -18,4 +17,32 @@
     /* Tipografías */
     --font-titulos: "Montserrat", sans-serif;
     --font-texto: "Open Sans", sans-serif;
+}
+
+/* Componentes reutilizables */
+@layer components {
+
+    /* Botón principal */
+    .btn-ruta {
+        @apply bg-verde-ruta text-white font-semibold transition-colors;
+    }
+
+    .btn-ruta:hover {
+        @apply bg-amarillo-faro text-azul-noche;
+    }
+
+    .btn-ruta:focus-visible {
+        @apply outline-2 outline-offset-2 outline-amarillo-faro;
+    }
+
+}
+
+/* Tarjeta de ruta */
+.card-ruta {
+    @apply w-full bg-white dark:bg-white/5 border border-gris-asfalto/30 dark:border-white/20 rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:border-verde-ruta transition-all duration-300;
+}
+
+/* Etiqueta de dificultad */
+.badge-ruta {
+    @apply inline-block text-sm font-semibold px-3 py-1 rounded-full;
 }
