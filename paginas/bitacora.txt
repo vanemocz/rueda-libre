@@ -385,6 +385,78 @@ SEMANA 2
 
 RUEDA NOCTURNA
 
-1. Bootstrap: utilice clases predefinidas de componentes, como btn y btn-primary.
-2. Tailwind: construi el botón combinando utilidades como bg-emerald-500, px-8, py-3 y rounded-full.
-3. Diferencia clave: Bootstrap ofrece componentes prediseñados; Tailwind permite construir diseños combinando clases de utilidad.
+# Minireto 1
+
+    1. Bootstrap: utilice clases predefinidas de componentes, como btn y btn-primary.
+    2. Tailwind: construi el botón combinando utilidades como bg-emerald-500, px-8, py-3 y rounded-full.
+    - Diferencia clave: Bootstrap ofrece componentes prediseñados; Tailwind permite construir diseños combinando clases de utilidad.
+
+# Minireto 2
+
+    Generación de clases con Tailwind CLI:
+
+    1. Al buscar bg-emerald-500 en output.css, encontré la clase porque está siendo utilizada en el HTML.
+    2. Al buscar bg-pink-500, no apareció porque no se está utilizando en ningún archivo analizado.
+    - Esto permite que Tailwind genere únicamente los estilos necesarios y reduzca el tamaño del archivo CSS final.
+
+# Minireto 5
+
+    Distribución de las tarjetas de rutas
+
+    Se utilizó CSS Grid mediante las clases `grid`, `grid-cols-1`, `md:grid-cols-2` y `lg:grid-cols-3` para organizar las tres tarjetas de rutas. Se eligió esta herramienta porque permite distribuir los elementos en columnas de forma ordenada y mantener una separación uniforme mediante `gap-8`.
+    Se implementó un diseño responsivo que adapta la distribución según el tamaño de pantalla: una columna en dispositivos móviles, dos columnas en pantallas medianas y tres columnas en pantallas grandes. Esto permite aprovechar mejor el espacio disponible y facilita la visualización de las rutas en diferentes dispositivos.
+
+# Minireto 6
+
+    Diseño responsive Mobile-First
+
+    Se adaptó la landing page Rueda Nocturna utilizando el enfoque Mobile-First de Tailwind CSS. Se reorganizó el encabezado para mostrar sus elementos en columna en dispositivos móviles y en fila desde el breakpoint md, ocultando los enlaces de navegación en celulares y manteniendo visible el botón de inscripción. 
+    Las tarjetas de rutas se organizaron mediante CSS Grid, utilizando una columna inicialmente, dos columnas desde sm y tres desde lg. Los cuatro pasos de la sección «Cómo funciona» también se distribuyeron con Grid, pasando de una columna a dos y finalmente a cuatro columnas en pantallas grandes.
+    Se ajustó la presentación de los contenidos para conservar la legibilidad, el espaciado y la organización visual en diferentes tamaños de pantalla.
+    Finalmente, se realizaron pruebas en 360, 640, 768, 1024 y 1280 píxeles, verificando el comportamiento de las secciones y la ausencia de desplazamiento horizontal.
+
+# Minireto 8
+
+    Comparación y elección del framework
+
+    Criterio              | Bootstrap                         | Tailwind CSS
+    ----------------------|-----------------------------------|-----------------------------------
+    Curva de aprendizaje  | Más sencillo para iniciar.       | Requiere aprender clases utilitarias.
+    Personalización       | Depende de componentes y CSS.     | Mayor control sobre cada elemento.
+    Tamaño final          | CSS: 40,9 KB                     | CSS minificado: 20,6 KB
+                        | JS: 25,2 KB                      | JS adicional: 0 KB
+    Casos de uso          | Sitios rápidos con componentes   | Diseños personalizados e identidad
+                        | prediseñados.                    | visual propia.
+
+    
+# Minireto 9
+
+    Día 3 – Formulario de inscripción
+
+    Implementaciones:
+    - Campos para datos personales y selección de ruta.
+    - Controles adecuados: input, select, radio y checkbox.
+    - Validaciones nativas: required, minlength, pattern, min y max.
+    - Diseño responsive con dos columnas desde md.
+    - Compatibilidad con modo claro y oscuro.
+
+    Pruebas realizadas:
+    - Formulario vacío.
+    - Datos inválidos.
+    - Validación de celular y acompañantes.
+    - Formulario completo.
+    - Navegación mediante teclado.
+    - Visualización en ambos temas.
+
+    Tiempo: minutos.
+
+# Minireto 10
+
+    Un solo ecosistema
+
+    Se integró Rueda Nocturna con Rueda Libre mediante enlaces
+    de navegación entre las páginas. Se unificaron los datos
+    de contacto y se verificó la identidad visual, manteniendo
+    los estilos propios de cada versión.
+
+    Se validaron los enlaces y la navegación entre páginas.
