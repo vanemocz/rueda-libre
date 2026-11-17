@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <title>Rueda Nocturna</title>
-    <link rel="stylesheet" href="src/output.min.css">
+    <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body class="bg-crema text-azul-noche font-texto dark:bg-azul-noche dark:text-white">
@@ -86,8 +86,7 @@
                     <div class="card-ruta">
 
                         <div class="h-48 bg-gris-asfalto/20">
-                            <img src="../img/nocturna/ruta-centro.jpeg"
-                                alt="Ruta nocturna por el centro de Medellín"
+                            <img src="../img/nocturna/ruta-centro.jpeg" alt="Ruta nocturna por el centro de Medellín"
                                 class="w-full h-full object-cover">
                         </div>
 
@@ -126,8 +125,7 @@
                             </div>
 
                             <div class="mt-6">
-                                <button
-                                    class="btn-ruta w-full px-6 py-3 rounded-lg">
+                                <button class="btn-ruta w-full px-6 py-3 rounded-lg">
                                     Reservar ruta
                                 </button>
                             </div>
@@ -180,8 +178,7 @@
                             </div>
 
                             <div class="mt-6">
-                                <button
-                                    class="btn-ruta w-full px-6 py-3 rounded-lg">
+                                <button class="btn-ruta w-full px-6 py-3 rounded-lg">
                                     Reservar ruta
                                 </button>
                             </div>
@@ -194,8 +191,7 @@
                     <div class="card-ruta">
 
                         <div class="h-48 bg-gris-asfalto/20">
-                            <img src="../img/nocturna/ruta-palmas.jpeg"
-                                alt="Ruta nocturna en bicicleta por Las Palmas"
+                            <img src="../img/nocturna/ruta-palmas.jpeg" alt="Ruta nocturna en bicicleta por Las Palmas"
                                 class="w-full h-full object-cover">
                         </div>
 
@@ -234,8 +230,7 @@
                             </div>
 
                             <div class="mt-6">
-                                <button
-                                    class="btn-ruta w-full px-6 py-3 rounded-lg">
+                                <button class="btn-ruta w-full px-6 py-3 rounded-lg">
                                     Reservar ruta
                                 </button>
                             </div>
@@ -289,26 +284,152 @@
 
 
         <!-- INSCRIPCIÓN -->
-        <section id="inscripcion">
+        <section id="inscripcion" class="bg-crema dark:bg-azul-noche px-6 py-16">
 
-            <div class="bg-crema dark:bg-azul-noche px-6 py-16">
+            <div class="max-w-4xl mx-auto">
 
-                <div class="max-w-3xl mx-auto text-center">
-
+                <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold font-titulos text-azul-noche dark:text-white mb-4">
-                        ¡Únete a Rueda Nocturna!
+                        ¡Inscríbete a Rueda Nocturna!
                     </h2>
 
-                    <p class="text-gris-asfalto dark:text-white/80 text-lg mb-8">
-                        Reserva tu lugar y descubre Medellín de una manera diferente.
+                    <p class="text-gris-asfalto dark:text-white/80">
+                        Completa tus datos y prepárate para descubrir Medellín sobre dos ruedas.
                     </p>
-
-                    <a href="../paginas/reservas.html"
-                        class="inline-block bg-verde-ruta text-white px-8 py-4 rounded-lg font-semibold hover:bg-amarillo-faro hover:text-azul-noche transition-colors">
-                        Inscríbete ahora
-                    </a>
-
                 </div>
+
+                <form
+                    class="bg-white dark:bg-white/5 border border-gris-asfalto/30 dark:border-white/20 rounded-xl shadow-md p-6 md:p-8">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- Nombre -->
+                        <div>
+                            <label for="nombre" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Nombre completo
+                            </label>
+                            <input type="text" id="nombre" name="nombre" minlength="3" required
+                                placeholder="Tu nombre completo"
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                        </div>
+
+                        <!-- Correo -->
+                        <div>
+                            <label for="correo" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Correo electrónico
+                            </label>
+                            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com"
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                        </div>
+
+                        <!-- Celular -->
+                        <div>
+                            <label for="celular" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Número de celular
+                            </label>
+                            <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" maxlength="10" required
+                                title="Debe tener 10 dígitos y comenzar por 3" placeholder="3001234567"
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                        </div>
+
+                        <!-- Ruta -->
+                        <div>
+                            <label for="ruta" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Ruta que deseas realizar
+                            </label>
+                            <select id="ruta" name="ruta" required
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                                <option value="">Selecciona una ruta</option>
+                                <option value="centro">Luces del Centro</option>
+                                <option value="miradores">Miradores de la Ciudad</option>
+                                <option value="palmas">Luna en Las Palmas</option>
+                            </select>
+                        </div>
+
+                        <!-- Día -->
+                        <div>
+                            <label for="dia" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Día de salida
+                            </label>
+                            <select id="dia" name="dia" required
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                                <option value="">Selecciona un día</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sábado</option>
+                            </select>
+                        </div>
+
+                        <!-- Acompañantes -->
+                        <div>
+                            <label for="acompanantes" class="block font-semibold text-azul-noche dark:text-white mb-2">
+                                Número de acompañantes
+                            </label>
+                            <input type="number" id="acompanantes" name="acompanantes" min="0" max="3" required
+                                value="0"
+                                class="w-full p-3 rounded-lg border border-gris-asfalto/40 bg-crema dark:bg-azul-noche dark:text-white focus:outline-none focus:ring-2 focus:ring-verde-ruta">
+                        </div>
+
+                    </div>
+
+                    <!-- Experiencia -->
+                    <fieldset class="mt-8">
+                        <legend class="font-semibold text-azul-noche dark:text-white mb-3">
+                            Nivel de experiencia
+                        </legend>
+
+                        <div class="flex flex-wrap gap-6 text-azul-noche dark:text-white">
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="experiencia" value="principiante" required>
+                                Principiante
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="experiencia" value="intermedio">
+                                Intermedio
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="experiencia" value="avanzado">
+                                Avanzado
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Bicicleta propia -->
+                    <fieldset class="mt-8">
+                        <legend class="font-semibold text-azul-noche dark:text-white mb-3">
+                            ¿Tienes bicicleta propia?
+                        </legend>
+
+                        <div class="flex gap-6 text-azul-noche dark:text-white">
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="bicicleta" value="si" required>
+                                Sí
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="bicicleta" value="no">
+                                No
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Condiciones -->
+                    <div class="mt-8">
+                        <label class="flex items-start gap-3 text-sm text-azul-noche dark:text-white">
+                            <input type="checkbox" name="condiciones" required class="mt-1">
+                            Acepto las condiciones de participación y las recomendaciones de seguridad.
+                        </label>
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn-ruta w-full mt-8 px-6 py-3 rounded-lg">
+                        Enviar inscripción
+                    </button>
+
+                </form>
+
             </div>
         </section>
 
@@ -375,4 +496,5 @@
     </footer>
 
 </body>
+
 </html>
